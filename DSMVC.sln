@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DSMVC", "DSMVC\DSMVC.csproj", "{422ED258-80A2-41B4-93D0-443AC3A8B44E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{F34FBA74-C56A-479D-A7D9-46512A8CFA0C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{65FA4088-19AC-4FEE-81AC-2D301CC3B5D3}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1 = PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{E0F134EC-0A9E-4D57-891E-694F26873CAB}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Templates\DSMVC.json = PublishScripts\Templates\DSMVC.json
+		PublishScripts\Templates\DSMVC.param.dev.json = PublishScripts\Templates\DSMVC.param.dev.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{422ED258-80A2-41B4-93D0-443AC3A8B44E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{422ED258-80A2-41B4-93D0-443AC3A8B44E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{422ED258-80A2-41B4-93D0-443AC3A8B44E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{422ED258-80A2-41B4-93D0-443AC3A8B44E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{65FA4088-19AC-4FEE-81AC-2D301CC3B5D3} = {F34FBA74-C56A-479D-A7D9-46512A8CFA0C}
+		{E0F134EC-0A9E-4D57-891E-694F26873CAB} = {F34FBA74-C56A-479D-A7D9-46512A8CFA0C}
+	EndGlobalSection
+EndGlobal

@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<parameters>
-  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." defaultValue="Data Source=(LocalDb)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\aspnet-DSMVC-20160114091402.mdf;Initial Catalog=aspnet-DSMVC-20160114091402;Integrated Security=True" tags="SqlConnectionString">
-    <parameterEntry kind="XmlFile" scope="C:\\Users\\Dawid\\Documents\\Visual\ Studio\ 2015\\Projects\\DSMVC\\DSMVC\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
-  </parameter>
-  <parameter name="DSMVCContext-Web.config Connection String" description="DSMVCContext Connection String used in web.config by the application to access the database." defaultValue="Data Source=(localdb)\MSSQLLocalDB; Initial Catalog=DSMVCContext-20160114211951; Integrated Security=True; MultipleActiveResultSets=True; AttachDbFilename=|DataDirectory|DSMVCContext-20160114211951.mdf" tags="SqlConnectionString">
-    <parameterEntry kind="XmlFile" scope="C:\\Users\\Dawid\\Documents\\Visual\ Studio\ 2015\\Projects\\DSMVC\\DSMVC\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DSMVCContext']/@connectionString" />
-  </parameter>
-</parameters>

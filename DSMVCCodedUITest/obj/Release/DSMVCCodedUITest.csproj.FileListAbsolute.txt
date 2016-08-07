@@ -1,0 +1,5 @@
+C:\Users\Dawid\Documents\Visual Studio 2015\Projects\DSMVC\DSMVCCodedUITest\bin\Release\DSMVCCodedUITest.dll
+C:\Users\Dawid\Documents\Visual Studio 2015\Projects\DSMVC\DSMVCCodedUITest\bin\Release\DSMVCCodedUITest.pdb
+C:\Users\Dawid\Documents\Visual Studio 2015\Projects\DSMVC\DSMVCCodedUITest\obj\Release\DSMVCCodedUITest.csprojResolveAssemblyReference.cache
+C:\Users\Dawid\Documents\Visual Studio 2015\Projects\DSMVC\DSMVCCodedUITest\obj\Release\DSMVCCodedUITest.dll
+C:\Users\Dawid\Documents\Visual Studio 2015\Projects\DSMVC\DSMVCCodedUITest\obj\Release\DSMVCCodedUITest.pdb

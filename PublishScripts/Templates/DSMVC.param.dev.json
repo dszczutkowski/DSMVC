@@ -1,0 +1,32 @@
+{
+  "siteName": {
+    "value": "dsmvc"
+  },
+  "hostingPlanName": {
+    "value": "dsmvc"
+  },
+  "siteLocation": {
+    "value": "North Europe"
+  },
+  "sku": {
+    "value": "Free"
+  },
+  "workerSize": {
+    "value": "0"
+  },
+  "serverName": {
+    "value": "dsmvc"
+  },
+  "serverLocation": {
+    "value": "North Europe"
+  },
+  "administratorLogin": {
+    "value": "dszczutkowski"
+  },
+  "administratorLoginPassword": {
+    "value": "Marisia!"
+  },
+  "databaseName": {
+    "value": "dsmvc_db"
+  }
+}

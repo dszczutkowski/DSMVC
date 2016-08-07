@@ -1,0 +1,11 @@
+C:\Users\Dawid\Documents\Visual Studio 2015\Projects\DSMVC\DSMVCSeleniumTest\bin\Release\DSMVCSeleniumTest.dll
+C:\Users\Dawid\Documents\Visual Studio 2015\Projects\DSMVC\DSMVCSeleniumTest\bin\Release\DSMVCSeleniumTest.pdb
+C:\Users\Dawid\Documents\Visual Studio 2015\Projects\DSMVC\DSMVCSeleniumTest\bin\Release\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Dawid\Documents\Visual Studio 2015\Projects\DSMVC\DSMVCSeleniumTest\bin\Release\WebDriver.dll
+C:\Users\Dawid\Documents\Visual Studio 2015\Projects\DSMVC\DSMVCSeleniumTest\bin\Release\WebDriver.Support.dll
+C:\Users\Dawid\Documents\Visual Studio 2015\Projects\DSMVC\DSMVCSeleniumTest\bin\Release\WebDriver.xml
+C:\Users\Dawid\Documents\Visual Studio 2015\Projects\DSMVC\DSMVCSeleniumTest\bin\Release\WebDriver.Support.xml
+C:\Users\Dawid\Documents\Visual Studio 2015\Projects\DSMVC\DSMVCSeleniumTest\bin\Release\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\Users\Dawid\Documents\Visual Studio 2015\Projects\DSMVC\DSMVCSeleniumTest\obj\Release\DSMVCSeleniumTest.csprojResolveAssemblyReference.cache
+C:\Users\Dawid\Documents\Visual Studio 2015\Projects\DSMVC\DSMVCSeleniumTest\obj\Release\DSMVCSeleniumTest.dll
+C:\Users\Dawid\Documents\Visual Studio 2015\Projects\DSMVC\DSMVCSeleniumTest\obj\Release\DSMVCSeleniumTest.pdb

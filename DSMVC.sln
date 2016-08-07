@@ -18,6 +18,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{
 		PublishScripts\Templates\DSMVC.param.dev.json = PublishScripts\Templates\DSMVC.param.dev.json
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DSMVCCodedUITest", "DSMVCCodedUITest\DSMVCCodedUITest.csproj", "{74C2308A-D7E3-48B6-A6C3-93695CB3E827}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DSMVCSeleniumTest", "DSMVCSeleniumTest\DSMVCSeleniumTest.csproj", "{B576A8EE-E56C-47B8-AD9A-5BFA17F438E5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,6 +32,14 @@ Global
 		{422ED258-80A2-41B4-93D0-443AC3A8B44E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{422ED258-80A2-41B4-93D0-443AC3A8B44E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{422ED258-80A2-41B4-93D0-443AC3A8B44E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74C2308A-D7E3-48B6-A6C3-93695CB3E827}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74C2308A-D7E3-48B6-A6C3-93695CB3E827}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74C2308A-D7E3-48B6-A6C3-93695CB3E827}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74C2308A-D7E3-48B6-A6C3-93695CB3E827}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B576A8EE-E56C-47B8-AD9A-5BFA17F438E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B576A8EE-E56C-47B8-AD9A-5BFA17F438E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B576A8EE-E56C-47B8-AD9A-5BFA17F438E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B576A8EE-E56C-47B8-AD9A-5BFA17F438E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

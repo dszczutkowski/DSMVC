@@ -233,7 +233,9 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Properties\PublishProfiles\cba.pubxml" />
     <None Include="Properties\PublishProfiles\dsmvc.pubxml" />
+    <None Include="Properties\PublishProfiles\myasp.net domain.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

@@ -1,0 +1,3254 @@
+<?xml version="1.0"?>
+<UITest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="" Id="bcf3d521-bae2-43d6-9aad-9a937f5794e3" AssemblyVersion="14.0.23107.0" Version="1.0" xmlns="http://schemas.microsoft.com/VisualStudio/TeamTest/UITest/2010">
+  <Configuration>
+    <Group Name="IE">
+      <Setting Name="Version" Value="9.11.10586.0" WarningLevel="1" />
+      <Setting Name="InformationBar" WarningLevel="1" />
+      <Setting Name="AutoCompletePassword" Value="no" WarningLevel="1" />
+      <Setting Name="AutoCompleteForm" WarningLevel="1" />
+      <Setting Name="DefaultBrowser" Value="IEXPLORE.EXE" WarningLevel="1" />
+      <Setting Name="PopupBlocker" Value="1" WarningLevel="1" />
+      <Setting Name="TabbedBrowsing" WarningLevel="2" />
+      <Setting Name="InternetZoneSecurity" Value="66816" WarningLevel="2" />
+      <Setting Name="IntranetZoneSecurity" Value="69632" WarningLevel="2" />
+      <Setting Name="TrustedZoneSecurity" Value="70912" WarningLevel="2" />
+      <Setting Name="RestrictedZoneSecurity" Value="73728" WarningLevel="2" />
+      <Setting Name="PhishingFilter" WarningLevel="1" />
+      <Setting Name="EnhancedSecurityConfiguration" WarningLevel="1" />
+    </Group>
+    <Group Name="OS">
+      <Setting Name="Name" Value="Microsoft Windows 10 Pro" WarningLevel="2" />
+      <Setting Name="Version" Value="Microsoft Windows NT 10.0.10586.0" WarningLevel="2" />
+      <Setting Name="IsUserAdmin" Value="False" WarningLevel="2" />
+      <Setting Name="Is64BitOperatingSystem" Value="True" WarningLevel="2" />
+      <Setting Name="IsTerminalServerSession" Value="False" WarningLevel="2" />
+      <Setting Name="OSLanguage" Value="1045" WarningLevel="1" />
+      <Setting Name="UserLocale" Value="1045" WarningLevel="1" />
+      <Setting Name="DragFullWindows" Value="True" WarningLevel="2" />
+      <Setting Name="ScreenResolutionWidth" Value="1920" WarningLevel="2" />
+      <Setting Name="ScreenResolutionHeight" Value="1080" WarningLevel="2" />
+      <Setting Name="SystemDPIX" Value="120" WarningLevel="2" />
+      <Setting Name="SystemDPIY" Value="120" WarningLevel="2" />
+      <Setting Name="Aero" Value="1" WarningLevel="1" />
+      <Setting Name="UACEnabled" Value="1" WarningLevel="2" />
+      <Setting Name="UACPromptEnabled" Value="5" WarningLevel="1" />
+    </Group>
+    <Group Name="TechnologyManagers">
+      <Setting Name="Web" WarningLevel="1" />
+      <Setting Name="Web" WarningLevel="1" />
+      <Setting Name="UIA" WarningLevel="1" />
+    </Group>
+  </Configuration>
+  <InitializeActions />
+  <ExecuteActions>
+    <AssertAction UIObjectName="UIMap.UIKontaktDawidSzczutkoWindow.UIKontaktDawidSzczutkoDocument.UIGithubcomdsczutkowskHyperlink">
+      <ParameterName />
+      <PropertyName>Href</PropertyName>
+      <MessageOnValidationFailure>There is no link to this site</MessageOnValidationFailure>
+      <PropertyCondition>IsNotNull</PropertyCondition>
+    </AssertAction>
+    <AssertAction UIObjectName="UIMap.UIKontaktDawidSzczutkoWindow.UIKontaktDawidSzczutkoDocument.UIGithubcomdsczutkowskHyperlink">
+      <ParameterName />
+      <PropertyName>Href</PropertyName>
+      <ExpectedValue>https://github.com/dszczutkowski</ExpectedValue>
+      <MessageOnValidationFailure>Link is incorrect</MessageOnValidationFailure>
+      <Type>String</Type>
+      <PropertyCondition>AreEqual</PropertyCondition>
+    </AssertAction>
+    <AssertAction UIObjectName="UIMap.UIKontaktDawidSzczutkoWindow.UIKontaktDawidSzczutkoDocument.UIDszczutkowskioutlookHyperlink">
+      <ParameterName />
+      <PropertyName>Href</PropertyName>
+      <ExpectedValue>mailto:dszczutkowski@outlook.com</ExpectedValue>
+      <MessageOnValidationFailure>Mail is incorrect</MessageOnValidationFailure>
+      <Type>String</Type>
+      <PropertyCondition>AreEqual</PropertyCondition>
+    </AssertAction>
+    <AssertAction UIObjectName="UIMap.UIKontaktDawidSzczutkoWindow.UIKontaktDawidSzczutkoDocument.UIDszczutkowskioutlookHyperlink">
+      <ParameterName />
+      <PropertyName>Href</PropertyName>
+      <MessageOnValidationFailure>there is no mail</MessageOnValidationFailure>
+      <PropertyCondition>IsNotNull</PropertyCondition>
+    </AssertAction>
+    <TestStepMarkerAction Comment="checkins is mail and github are correct" MarkerInformation="AssertGithubAndMail">
+      <ParameterName />
+      <StepId>-1</StepId>
+      <Direction>Start</Direction>
+      <Outcome />
+      <Disabled>false</Disabled>
+      <WorkItemId>0</WorkItemId>
+      <MarkerRegionType>Assertion</MarkerRegionType>
+    </TestStepMarkerAction>
+    <AssertAction UIObjectName="UIMap.UIStronaGłównaDawidSzcWindow1.UIStronaGłównaDawidSzcDocument.UILogoutFormCustom.UIWitajabcgmailcomHyperlink">
+      <ParameterName />
+      <PropertyName>InnerText</PropertyName>
+      <ExpectedValue>Witaj abc@gmail.com!</ExpectedValue>
+      <MessageOnValidationFailure>Nie zalogowano!</MessageOnValidationFailure>
+      <Type>String</Type>
+      <PropertyCondition>AreEqual</PropertyCondition>
+    </AssertAction>
+    <TestStepMarkerAction Comment="assert if there is a welcome &quot;mail&quot;" MarkerInformation="AssertLogin">
+      <ParameterName />
+      <StepId>-1</StepId>
+      <Direction>Start</Direction>
+      <Outcome />
+      <Disabled>false</Disabled>
+      <WorkItemId>0</WorkItemId>
+      <MarkerRegionType>Assertion</MarkerRegionType>
+    </TestStepMarkerAction>
+    <AssertAction UIObjectName="UIMap.UIStronaGłównaDawidSzcWindow1.UIStronaGłównaDawidSzcDocument.UIZalogujHyperlink">
+      <ParameterName />
+      <PropertyName>InnerText</PropertyName>
+      <ExpectedValue>Zaloguj</ExpectedValue>
+      <MessageOnValidationFailure>Jestes zalogowany!</MessageOnValidationFailure>
+      <Type>String</Type>
+      <PropertyCondition>AreEqual</PropertyCondition>
+    </AssertAction>
+    <TestStepMarkerAction Comment="asserting logout" MarkerInformation="AssertLogout">
+      <ParameterName />
+      <StepId>-1</StepId>
+      <Direction>Start</Direction>
+      <Outcome />
+      <Disabled>false</Disabled>
+      <WorkItemId>0</WorkItemId>
+      <MarkerRegionType>Assertion</MarkerRegionType>
+    </TestStepMarkerAction>
+    <MouseAction UIObjectName="UIMap.UIStronaGłównaDawidSzcWindow1.UIStronaGłównaDawidSzcDocument.UIKontaktHyperlink">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="43" Y="32" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <MouseAction UIObjectName="UIMap.UIKontaktDawidSzczutkoWindow.UIKontaktDawidSzczutkoDocument.UIGithubcomdsczutkowskHyperlink">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="156" Y="12" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <SendKeysAction UIObjectName="UIMap.UIStronaGłównaDawidSzcWindow3.UIDszczutkowskiGitHubDocument">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Text Encoded="false">{Back}</Text>
+    </SendKeysAction>
+    <MouseAction UIObjectName="UIMap.UIKontaktDawidSzczutkoWindow.UIKontaktDawidSzczutkoDocument.UIDszczutkowskioutlookHyperlink">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="201" Y="16" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <SendKeysAction UIObjectName="UIMap.UIItemWindow1.UIOknomenuwysuwanegoClient">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Text Encoded="false">{Escape}</Text>
+    </SendKeysAction>
+    <TestStepMarkerAction Comment="Testing Contact links" MarkerInformation="ContactTest">
+      <ParameterName />
+      <StepId>-1</StepId>
+      <Direction>Start</Direction>
+      <Outcome />
+      <Disabled>false</Disabled>
+      <WorkItemId>0</WorkItemId>
+      <MarkerRegionType>Action</MarkerRegionType>
+    </TestStepMarkerAction>
+    <MouseAction UIObjectName="UIMap.UIStronaGłównaDawidSzcWindow1.UIStronaGłównaDawidSzcDocument.UIZalogujHyperlink">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="52" Y="41" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <SetValueAction UIObjectName="UIMap.UIStronaGłównaDawidSzcWindow1.UILogowanieDawidSzczutDocument.UIEmailEdit">
+      <ParameterName />
+      <Value Encoded="false">abc@gmail.com</Value>
+      <Type>String</Type>
+    </SetValueAction>
+    <SetValueAction UIObjectName="UIMap.UIStronaGłównaDawidSzcWindow1.UILogowanieDawidSzczutDocument.UIHasłoEdit">
+      <ParameterName />
+      <Value Encoded="true">lsk8zvwo5thXRQnyAe9OC+mi6cgcrogr</Value>
+      <Type>String</Type>
+    </SetValueAction>
+    <MouseAction UIObjectName="UIMap.UIStronaGłównaDawidSzcWindow1.UILogowanieDawidSzczutDocument.UILoginFormCustom.UIZalogujButton">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="61" Y="41" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <TestStepMarkerAction Comment="testing login and logout" MarkerInformation="LoginTest">
+      <ParameterName />
+      <StepId>-1</StepId>
+      <Direction>Start</Direction>
+      <Outcome />
+      <Disabled>false</Disabled>
+      <WorkItemId>0</WorkItemId>
+      <MarkerRegionType>Action</MarkerRegionType>
+    </TestStepMarkerAction>
+    <MouseAction UIObjectName="UIMap.UIStronaGłównaDawidSzcWindow1.UIStronaGłównaDawidSzcDocument.UILogoutFormCustom.UILogoffHyperlink">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="45" Y="34" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <TestStepMarkerAction Comment="testing logout" MarkerInformation="LogoutTest">
+      <ParameterName />
+      <StepId>-1</StepId>
+      <Direction>Start</Direction>
+      <Outcome />
+      <Disabled>false</Disabled>
+      <WorkItemId>0</WorkItemId>
+      <MarkerRegionType>Action</MarkerRegionType>
+    </TestStepMarkerAction>
+    <MouseAction UIObjectName="UIMap.UIStronaGłównaDawidSzcWindow1.UIStronaGłównaDawidSzcDocument.UIZalogujHyperlink">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="33" Y="45" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <SetValueAction UIObjectName="UIMap.UIStronaGłównaDawidSzcWindow1.UILogowanieDawidSzczutDocument.UIEmailEdit">
+      <ParameterName />
+      <Value Encoded="false">abc@gmail.com</Value>
+      <Type>String</Type>
+    </SetValueAction>
+    <SetValueAction UIObjectName="UIMap.UIStronaGłównaDawidSzcWindow1.UILogowanieDawidSzczutDocument.UIHasłoEdit">
+      <ParameterName />
+      <Value Encoded="true">lsk8zvwo5thXRQnyAe9OC+mi6cgcrogr</Value>
+      <Type>String</Type>
+    </SetValueAction>
+    <MouseAction UIObjectName="UIMap.UIStronaGłównaDawidSzcWindow1.UILogowanieDawidSzczutDocument.UILoginFormCustom.UIZalogujButton">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="44" Y="11" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <MouseAction UIObjectName="UIMap.UIStronaGłównaDawidSzcWindow1.UIStronaGłównaDawidSzcDocument.UIZamówieniaHyperlink">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="76" Y="45" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <MouseAction UIObjectName="UIMap.UIStronaGłównaDawidSzcWindow1.UIIndexDawidSzczutkowsDocument.UIStwórznowezamówienieHyperlink">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="159" Y="18" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <SetValueAction UIObjectName="UIMap.UIStronaGłównaDawidSzcWindow1.UICreateDawidSzczutkowDocument.UIWybierzdanieComboBox1">
+      <ParameterName />
+      <Value Encoded="false">Roast Beef</Value>
+      <Type>String</Type>
+    </SetValueAction>
+    <SetValueAction UIObjectName="UIMap.UIStronaGłównaDawidSzcWindow1.UICreateDawidSzczutkowDocument.UINumermiejscaEdit">
+      <ParameterName />
+      <Value Encoded="false">56</Value>
+      <Type>String</Type>
+    </SetValueAction>
+    <SetValueAction UIObjectName="UIMap.UIStronaGłównaDawidSzcWindow1.UICreateDawidSzczutkowDocument.UIFormapłatnościEdit">
+      <ParameterName />
+      <Value Encoded="false">Karta</Value>
+      <Type>String</Type>
+    </SetValueAction>
+    <SetValueAction UIObjectName="UIMap.UIStronaGłównaDawidSzcWindow1.UICreateDawidSzczutkowDocument.UINumermiejscaEdit">
+      <ParameterName />
+      <Value Encoded="false">16</Value>
+      <Type>String</Type>
+    </SetValueAction>
+    <MouseAction UIObjectName="UIMap.UIStronaGłównaDawidSzcWindow1.UICreateDawidSzczutkowDocument.UIUtwórzButton">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="42" Y="24" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <MouseAction UIObjectName="UIMap.UIStronaGłównaDawidSzcWindow1.UIIndexDawidSzczutkowsDocument.UIEdytujHyperlink1">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="33" Y="14" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <SetValueAction UIObjectName="UIMap.UIStronaGłównaDawidSzcWindow1.UIEditDawidSzczutkowskDocument2.UIMealIDComboBox">
+      <ParameterName />
+      <Value Encoded="false">Łosoś Norweski</Value>
+      <Type>String</Type>
+    </SetValueAction>
+    <MouseAction UIObjectName="UIMap.UIStronaGłównaDawidSzcWindow1.UIEditDawidSzczutkowskDocument2.UISaveButton">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="52" Y="14" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <MouseAction UIObjectName="UIMap.UIStronaGłównaDawidSzcWindow1.UIIndexDawidSzczutkowsDocument.UISzczegółyHyperlink1">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="55" Y="3" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <MouseAction UIObjectName="UIMap.UIStronaGłównaDawidSzcWindow1.UIDetailsDawidSzczutkoDocument2.UIBacktoListHyperlink">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="34" Y="9" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <MouseAction UIObjectName="UIMap.UIStronaGłównaDawidSzcWindow1.UIIndexDawidSzczutkowsDocument.UIUsuńHyperlink2">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="21" Y="13" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <MouseAction UIObjectName="UIMap.UIStronaGłównaDawidSzcWindow1.UIDeleteDawidSzczutkowDocument5.UIDeleteButton">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="40" Y="25" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <MouseAction UIObjectName="UIMap.UIStronaGłównaDawidSzcWindow1.UIIndexDawidSzczutkowsDocument.UIDawidSzczutkowskiMVCHyperlink">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="255" Y="23" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <MouseAction UIObjectName="UIMap.UIStronaGłównaDawidSzcWindow1.UIStronaGłównaDawidSzcDocument.UILogoutFormCustom.UILogoffHyperlink">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="43" Y="40" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <TestStepMarkerAction Comment="Testing order functionality" MarkerInformation="OrderTest">
+      <ParameterName />
+      <StepId>-1</StepId>
+      <Direction>Start</Direction>
+      <Outcome />
+      <Disabled>false</Disabled>
+      <WorkItemId>0</WorkItemId>
+      <MarkerRegionType>Action</MarkerRegionType>
+    </TestStepMarkerAction>
+    <MouseAction UIObjectName="UIMap.UIStronaGłównaDawidSzcWindow1.UIStronaGłównaDawidSzcDocument.UIZalogujHyperlink">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="45" Y="41" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <SetValueAction UIObjectName="UIMap.UIStronaGłównaDawidSzcWindow1.UILogowanieDawidSzczutDocument.UIEmailEdit">
+      <ParameterName />
+      <Value Encoded="false">abc@gmail.com</Value>
+      <Type>String</Type>
+    </SetValueAction>
+    <SetValueAction UIObjectName="UIMap.UIStronaGłównaDawidSzcWindow1.UILogowanieDawidSzczutDocument.UIHasłoEdit">
+      <ParameterName />
+      <Value Encoded="true">lsk8zvwo5thXRQnyAe9OC+mi6cgcrogr</Value>
+      <Type>String</Type>
+    </SetValueAction>
+    <MouseAction UIObjectName="UIMap.UIStronaGłównaDawidSzcWindow1.UILogowanieDawidSzczutDocument.UILoginFormCustom.UIZalogujButton">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="49" Y="36" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <MouseAction UIObjectName="UIMap.UIStronaGłównaDawidSzcWindow1.UIStronaGłównaDawidSzcDocument.UIPosiłkiHyperlink">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="51" Y="40" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <MouseAction UIObjectName="UIMap.UIStronaGłównaDawidSzcWindow1.UIPosiłkiDawidSzczutkoDocument.UIStwórznowedanieHyperlink">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="97" Y="17" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <SetValueAction UIObjectName="UIMap.UIStronaGłównaDawidSzcWindow1.UIStwórznowedanieDawidDocument.UINazwaEdit">
+      <ParameterName />
+      <Value Encoded="false">test1</Value>
+      <Type>String</Type>
+    </SetValueAction>
+    <SetValueAction UIObjectName="UIMap.UIStronaGłównaDawidSzcWindow1.UIStwórznowedanieDawidDocument.UICenaEdit">
+      <ParameterName />
+      <Value Encoded="false">12.99</Value>
+      <Type>String</Type>
+    </SetValueAction>
+    <MouseAction UIObjectName="UIMap.UIStronaGłównaDawidSzcWindow1.UIStwórznowedanieDawidDocument.UICreateButton">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="49" Y="14" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <MouseAction UIObjectName="UIMap.UIStronaGłównaDawidSzcWindow1.UIPosiłkiDawidSzczutkoDocument.UIStwórznowedanieHyperlink">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="70" Y="17" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <SetValueAction UIObjectName="UIMap.UIStronaGłównaDawidSzcWindow1.UIStwórznowedanieDawidDocument.UINazwaEdit">
+      <ParameterName />
+      <Value Encoded="false">test2</Value>
+      <Type>String</Type>
+    </SetValueAction>
+    <SetValueAction UIObjectName="UIMap.UIStronaGłównaDawidSzcWindow1.UIStwórznowedanieDawidDocument.UICenaEdit">
+      <ParameterName />
+      <Value Encoded="false">13.99</Value>
+      <Type>String</Type>
+    </SetValueAction>
+    <MouseAction UIObjectName="UIMap.UIStronaGłównaDawidSzcWindow1.UIStwórznowedanieDawidDocument.UICreateButton">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="64" Y="37" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <MouseAction UIObjectName="UIMap.UIStronaGłównaDawidSzcWindow1.UIPosiłkiDawidSzczutkoDocument.UISortujHyperlink">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="23" Y="14" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <MouseAction UIObjectName="UIMap.UIStronaGłównaDawidSzcWindow1.UIPosiłkiDawidSzczutkoDocument4.UIStwórznowedanieHyperlink">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="96" Y="6" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <SetValueAction UIObjectName="UIMap.UIStronaGłównaDawidSzcWindow1.UIStwórznowedanieDawidDocument.UINazwaEdit">
+      <ParameterName />
+      <Value Encoded="false">aabb</Value>
+      <Type>String</Type>
+    </SetValueAction>
+    <SetValueAction UIObjectName="UIMap.UIStronaGłównaDawidSzcWindow1.UIStwórznowedanieDawidDocument.UICenaEdit">
+      <ParameterName />
+      <Value Encoded="false">1</Value>
+      <Type>String</Type>
+    </SetValueAction>
+    <MouseAction UIObjectName="UIMap.UIStronaGłównaDawidSzcWindow1.UIStwórznowedanieDawidDocument.UICreateButton">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="71" Y="25" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <MouseAction UIObjectName="UIMap.UIStronaGłównaDawidSzcWindow1.UIPosiłkiDawidSzczutkoDocument.UISortujHyperlink">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="43" Y="11" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <MouseAction UIObjectName="UIMap.UIStronaGłównaDawidSzcWindow1.UIPosiłkiDawidSzczutkoDocument4.UISzczegółyHyperlink">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="36" Y="15" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <MouseAction UIObjectName="UIMap.UIStronaGłównaDawidSzcWindow1.UIDetailsDawidSzczutkoDocument.UIBacktoListHyperlink">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="77" Y="8" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <MouseAction UIObjectName="UIMap.UIStronaGłównaDawidSzcWindow1.UIPosiłkiDawidSzczutkoDocument.UIEdytujHyperlink">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="23" Y="20" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <SetValueAction UIObjectName="UIMap.UIStronaGłównaDawidSzcWindow1.UIEditDawidSzczutkowskDocument.UINazwaEdit">
+      <ParameterName />
+      <Value Encoded="false">test4</Value>
+      <Type>String</Type>
+    </SetValueAction>
+    <SetValueAction UIObjectName="UIMap.UIStronaGłównaDawidSzcWindow1.UIEditDawidSzczutkowskDocument.UICenaEdit">
+      <ParameterName />
+      <Value Encoded="false">13.66</Value>
+      <Type>String</Type>
+    </SetValueAction>
+    <MouseAction UIObjectName="UIMap.UIStronaGłównaDawidSzcWindow1.UIEditDawidSzczutkowskDocument.UISaveButton">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="43" Y="3" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <MouseAction UIObjectName="UIMap.UIStronaGłównaDawidSzcWindow1.UIPosiłkiDawidSzczutkoDocument.UIUsuńHyperlink">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="29" Y="11" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <MouseAction UIObjectName="UIMap.UIStronaGłównaDawidSzcWindow1.UIDeleteDawidSzczutkowDocument.UIDeleteButton">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="45" Y="33" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <MouseAction UIObjectName="UIMap.UIStronaGłównaDawidSzcWindow1.UIPosiłkiDawidSzczutkoDocument.UIUsuńHyperlink1">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="27" Y="11" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <MouseAction UIObjectName="UIMap.UIStronaGłównaDawidSzcWindow1.UIDeleteDawidSzczutkowDocument1.UIDeleteButton">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="19" Y="28" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <MouseAction UIObjectName="UIMap.UIStronaGłównaDawidSzcWindow1.UIPosiłkiDawidSzczutkoDocument.UIUsuńHyperlink2">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="34" Y="7" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <MouseAction UIObjectName="UIMap.UIStronaGłównaDawidSzcWindow1.UIDeleteDawidSzczutkowDocument2.UIDeleteButton">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="51" Y="20" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <MouseAction UIObjectName="UIMap.UIStronaGłównaDawidSzcWindow1.UIPosiłkiDawidSzczutkoDocument.UIDawidSzczutkowskiMVCHyperlink">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="233" Y="41" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <MouseAction UIObjectName="UIMap.UIStronaGłównaDawidSzcWindow1.UIStronaGłównaDawidSzcDocument.UILogoutFormCustom.UILogoffHyperlink">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="43" Y="34" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <TestStepMarkerAction Comment="Testing Meal Crud with all functionalities" MarkerInformation="TestMeal">
+      <ParameterName />
+      <StepId>-1</StepId>
+      <Direction>Start</Direction>
+      <Outcome />
+      <Disabled>false</Disabled>
+      <WorkItemId>0</WorkItemId>
+      <MarkerRegionType>Action</MarkerRegionType>
+    </TestStepMarkerAction>
+    <MouseAction UIObjectName="UIMap.UIStronaGłównaDawidSzcWindow1.UIStronaGłównaDawidSzcDocument.UIPosiłkiHyperlink1">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="100" Y="7" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <MouseAction UIObjectName="UIMap.UIStronaGłównaDawidSzcWindow4.UINazwyDawidSzczutkowsDocument.UIWięcejHyperlink1">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="39" Y="14" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <MouseAction UIObjectName="UIMap.UIStronaGłównaDawidSzcWindow5.UIPosiłkiDawidSzczutkoDocument.UIDawidSzczutkowskiMVCHyperlink">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="125" Y="20" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <MouseAction UIObjectName="UIMap.UIStronaGłównaDawidSzcWindow1.UIStronaGłównaDawidSzcDocument.UIZamówieniaHyperlink1">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="192" Y="26" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <TestStepMarkerAction Comment="testing buttons" MarkerInformation="ButtonTest">
+      <ParameterName />
+      <StepId>-1</StepId>
+      <Direction>Start</Direction>
+      <Outcome />
+      <Disabled>false</Disabled>
+      <WorkItemId>0</WorkItemId>
+      <MarkerRegionType>Action</MarkerRegionType>
+    </TestStepMarkerAction>
+  </ExecuteActions>
+  <CleanupActions />
+  <OnErrorActions />
+  <Maps>
+    <UIMap Id="UIMap">
+      <TopLevelWindows>
+        <TopLevelWindow ControlType="Window" Id="UIStronaGłównaDawidSzcWindow" FriendlyName="Strona Główna - Dawid Szczutkowski MVC - Mozilla F..." SpecialControlType="None" SessionId="2688816">
+          <TechnologyName>MSAA</TechnologyName>
+          <WindowTitles>
+            <WindowTitle>Strona Główna - Dawid Szczutkowski MVC - Mozilla Firefox</WindowTitle>
+            <WindowTitle>Logowanie - Dawid Szczutkowski MVC - Mozilla Firefox</WindowTitle>
+          </WindowTitles>
+          <SearchConfigurations>
+            <SearchConfiguration>VisibleOnly</SearchConfiguration>
+          </SearchConfigurations>
+          <AndCondition Id="SearchCondition">
+            <PropertyCondition Name="Name">Strona Główna - Dawid Szczutkowski MVC - Mozilla Firefox</PropertyCondition>
+            <PropertyCondition Name="ClassName">MozillaWindowClass</PropertyCondition>
+            <PropertyCondition Name="ControlType">Window</PropertyCondition>
+          </AndCondition>
+          <SupportLevel>1</SupportLevel>
+          <Descendants>
+            <UIObject ControlType="ListItem" Id="UIRejestracjaListItem" FriendlyName="Rejestracja" SpecialControlType="None">
+              <TechnologyName>MSAA</TechnologyName>
+              <WindowTitles>
+                <WindowTitle>Strona Główna - Dawid Szczutkowski MVC - Mozilla Firefox</WindowTitle>
+              </WindowTitles>
+              <AndCondition Id="SearchCondition">
+                <PropertyCondition Name="Name">Rejestracja</PropertyCondition>
+                <PropertyCondition Name="ControlType">ListItem</PropertyCondition>
+              </AndCondition>
+              <SupportLevel>1</SupportLevel>
+              <Descendants>
+                <UIObject ControlType="Hyperlink" Id="UIRejestracjaHyperlink" FriendlyName="Rejestracja" SpecialControlType="None">
+                  <TechnologyName>MSAA</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Strona Główna - Dawid Szczutkowski MVC - Mozilla Firefox</WindowTitle>
+                  </WindowTitles>
+                  <SearchConfigurations>
+                    <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                  </SearchConfigurations>
+                  <AndCondition Id="SearchCondition">
+                    <PropertyCondition Name="Name">Rejestracja</PropertyCondition>
+                    <PropertyCondition Name="ControlType">Hyperlink</PropertyCondition>
+                  </AndCondition>
+                  <SupportLevel>1</SupportLevel>
+                  <Descendants />
+                </UIObject>
+              </Descendants>
+            </UIObject>
+            <UIObject ControlType="Hyperlink" Id="UIZalogujHyperlink" FriendlyName="Zaloguj" SpecialControlType="None">
+              <TechnologyName>MSAA</TechnologyName>
+              <WindowTitles>
+                <WindowTitle>Strona Główna - Dawid Szczutkowski MVC - Mozilla Firefox</WindowTitle>
+              </WindowTitles>
+              <SearchConfigurations>
+                <SearchConfiguration>VisibleOnly</SearchConfiguration>
+              </SearchConfigurations>
+              <AndCondition Id="SearchCondition">
+                <PropertyCondition Name="Name">Zaloguj</PropertyCondition>
+                <PropertyCondition Name="ControlType">Hyperlink</PropertyCondition>
+              </AndCondition>
+              <SupportLevel>0</SupportLevel>
+              <Descendants>
+                <UIObject ControlType="Edit" Id="UIZalogujEdit" FriendlyName="Zaloguj" SpecialControlType="None">
+                  <TechnologyName>MSAA</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Strona Główna - Dawid Szczutkowski MVC - Mozilla Firefox</WindowTitle>
+                  </WindowTitles>
+                  <SearchConfigurations>
+                    <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                  </SearchConfigurations>
+                  <AndCondition Id="SearchCondition">
+                    <PropertyCondition Name="Name">Zaloguj</PropertyCondition>
+                    <PropertyCondition Name="ControlType">Edit</PropertyCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+              </Descendants>
+            </UIObject>
+            <UIObject ControlType="Document" Id="UILogowanieDawidSzczutDocument" FriendlyName="Logowanie - Dawid Szczutkowski MVC" SpecialControlType="None">
+              <TechnologyName>MSAA</TechnologyName>
+              <WindowTitles>
+                <WindowTitle>Logowanie - Dawid Szczutkowski MVC - Mozilla Firefox</WindowTitle>
+              </WindowTitles>
+              <SearchConfigurations>
+                <SearchConfiguration>VisibleOnly</SearchConfiguration>
+              </SearchConfigurations>
+              <AndCondition Id="SearchCondition">
+                <PropertyCondition Name="Name">Logowanie - Dawid Szczutkowski MVC</PropertyCondition>
+                <PropertyCondition Name="ControlType">Document</PropertyCondition>
+              </AndCondition>
+              <SupportLevel>0</SupportLevel>
+              <Descendants>
+                <UIObject ControlType="Edit" Id="UIEmailEdit" FriendlyName="Email" SpecialControlType="None">
+                  <TechnologyName>MSAA</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Logowanie - Dawid Szczutkowski MVC - Mozilla Firefox</WindowTitle>
+                  </WindowTitles>
+                  <SearchConfigurations>
+                    <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                  </SearchConfigurations>
+                  <AndCondition Id="SearchCondition">
+                    <PropertyCondition Name="Name">Email</PropertyCondition>
+                    <PropertyCondition Name="ControlType">Edit</PropertyCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+                <UIObject ControlType="Edit" Id="UIHasłoEdit" FriendlyName="Hasło" SpecialControlType="None">
+                  <TechnologyName>MSAA</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Logowanie - Dawid Szczutkowski MVC - Mozilla Firefox</WindowTitle>
+                  </WindowTitles>
+                  <SearchConfigurations>
+                    <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                  </SearchConfigurations>
+                  <AndCondition Id="SearchCondition">
+                    <PropertyCondition Name="Name">Hasło</PropertyCondition>
+                    <PropertyCondition Name="ControlType">Edit</PropertyCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+                <UIObject ControlType="Button" Id="UIZalogujButton" FriendlyName="Zaloguj" SpecialControlType="None">
+                  <TechnologyName>MSAA</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Logowanie - Dawid Szczutkowski MVC - Mozilla Firefox</WindowTitle>
+                  </WindowTitles>
+                  <SearchConfigurations>
+                    <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                  </SearchConfigurations>
+                  <AndCondition Id="SearchCondition">
+                    <PropertyCondition Name="Name">Zaloguj</PropertyCondition>
+                    <PropertyCondition Name="ControlType">Button</PropertyCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+              </Descendants>
+            </UIObject>
+            <UIObject ControlType="Hyperlink" Id="UILogoffHyperlink" FriendlyName="Log off" SpecialControlType="None">
+              <TechnologyName>MSAA</TechnologyName>
+              <WindowTitles>
+                <WindowTitle>Strona Główna - Dawid Szczutkowski MVC - Mozilla Firefox</WindowTitle>
+              </WindowTitles>
+              <SearchConfigurations>
+                <SearchConfiguration>VisibleOnly</SearchConfiguration>
+              </SearchConfigurations>
+              <AndCondition Id="SearchCondition">
+                <PropertyCondition Name="Name">Log off</PropertyCondition>
+                <PropertyCondition Name="ControlType">Hyperlink</PropertyCondition>
+              </AndCondition>
+              <SupportLevel>0</SupportLevel>
+              <Descendants>
+                <UIObject ControlType="Edit" Id="UILogoffEdit" FriendlyName="Log off" SpecialControlType="None">
+                  <TechnologyName>MSAA</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Strona Główna - Dawid Szczutkowski MVC - Mozilla Firefox</WindowTitle>
+                  </WindowTitles>
+                  <SearchConfigurations>
+                    <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                  </SearchConfigurations>
+                  <AndCondition Id="SearchCondition">
+                    <PropertyCondition Name="Name">Log off</PropertyCondition>
+                    <PropertyCondition Name="ControlType">Edit</PropertyCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+              </Descendants>
+            </UIObject>
+            <UIObject ControlType="ListItem" Id="UIZalogujListItem" FriendlyName="Zaloguj" SpecialControlType="None">
+              <TechnologyName>MSAA</TechnologyName>
+              <WindowTitles>
+                <WindowTitle>Strona Główna - Dawid Szczutkowski MVC - Mozilla Firefox</WindowTitle>
+              </WindowTitles>
+              <AndCondition Id="SearchCondition">
+                <PropertyCondition Name="Name">Zaloguj</PropertyCondition>
+                <PropertyCondition Name="ControlType">ListItem</PropertyCondition>
+              </AndCondition>
+              <SupportLevel>0</SupportLevel>
+              <Descendants>
+                <UIObject ControlType="Hyperlink" Id="UIZalogujHyperlink" FriendlyName="Zaloguj" SpecialControlType="None">
+                  <TechnologyName>MSAA</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Strona Główna - Dawid Szczutkowski MVC - Mozilla Firefox</WindowTitle>
+                  </WindowTitles>
+                  <SearchConfigurations>
+                    <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                  </SearchConfigurations>
+                  <AndCondition Id="SearchCondition">
+                    <PropertyCondition Name="Name">Zaloguj</PropertyCondition>
+                    <PropertyCondition Name="ControlType">Hyperlink</PropertyCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+              </Descendants>
+            </UIObject>
+            <UIObject ControlType="ListItem" Id="UILogoffListItem" FriendlyName="Log off" SpecialControlType="None">
+              <TechnologyName>MSAA</TechnologyName>
+              <WindowTitles>
+                <WindowTitle>Strona Główna - Dawid Szczutkowski MVC - Mozilla Firefox</WindowTitle>
+              </WindowTitles>
+              <AndCondition Id="SearchCondition">
+                <PropertyCondition Name="Name">Log off</PropertyCondition>
+                <PropertyCondition Name="ControlType">ListItem</PropertyCondition>
+              </AndCondition>
+              <SupportLevel>0</SupportLevel>
+              <Descendants>
+                <UIObject ControlType="Hyperlink" Id="UILogoffHyperlink" FriendlyName="Log off" SpecialControlType="None">
+                  <TechnologyName>MSAA</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Strona Główna - Dawid Szczutkowski MVC - Mozilla Firefox</WindowTitle>
+                  </WindowTitles>
+                  <SearchConfigurations>
+                    <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                  </SearchConfigurations>
+                  <AndCondition Id="SearchCondition">
+                    <PropertyCondition Name="Name">Log off</PropertyCondition>
+                    <PropertyCondition Name="ControlType">Hyperlink</PropertyCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+              </Descendants>
+            </UIObject>
+          </Descendants>
+        </TopLevelWindow>
+        <TopLevelWindow ControlType="Window" Id="UIItemWindow" FriendlyName="" SpecialControlType="None" SessionId="65552">
+          <TechnologyName>MSAA</TechnologyName>
+          <WindowTitles />
+          <SearchConfigurations>
+            <SearchConfiguration>VisibleOnly</SearchConfiguration>
+          </SearchConfigurations>
+          <AndCondition Id="SearchCondition">
+            <PropertyCondition Name="AccessibleName">Pulpit</PropertyCondition>
+            <PropertyCondition Name="ClassName">#32769</PropertyCondition>
+            <PropertyCondition Name="ControlType">Window</PropertyCondition>
+          </AndCondition>
+          <SupportLevel>0</SupportLevel>
+          <Descendants>
+            <UIObject ControlType="List" Id="UIItemList" FriendlyName="" SpecialControlType="None">
+              <TechnologyName>MSAA</TechnologyName>
+              <WindowTitles>
+                <WindowTitle>Logowanie - Dawid Szczutkowski MVC - Mozilla Firefox</WindowTitle>
+              </WindowTitles>
+              <SearchConfigurations>
+                <SearchConfiguration>VisibleOnly</SearchConfiguration>
+              </SearchConfigurations>
+              <AndCondition Id="SearchCondition">
+                <PropertyCondition Name="ControlType">List</PropertyCondition>
+              </AndCondition>
+              <SupportLevel>0</SupportLevel>
+              <Descendants>
+                <UIObject ControlType="ListItem" Id="UIAbcgmailcomListItem" FriendlyName="abc@gmail.com" SpecialControlType="None">
+                  <TechnologyName>MSAA</TechnologyName>
+                  <WindowTitles />
+                  <AndCondition Id="SearchCondition">
+                    <PropertyCondition Name="Name">abc@gmail.com</PropertyCondition>
+                    <PropertyCondition Name="ControlType">ListItem</PropertyCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+              </Descendants>
+            </UIObject>
+          </Descendants>
+        </TopLevelWindow>
+        <TopLevelWindow ControlType="Window" Id="UIStronaGłównaDawidSzcWindow1" FriendlyName="Strona Główna - Dawid Szczutkowski MVC - Internet ..." SpecialControlType="BrowserWindow" SessionId="3999250">
+          <TechnologyName>MSAA</TechnologyName>
+          <WindowTitles>
+            <WindowTitle>Strona Główna - Dawid Szczutkowski MVC</WindowTitle>
+            <WindowTitle>Logowanie - Dawid Szczutkowski MVC</WindowTitle>
+            <WindowTitle>Posiłki - Dawid Szczutkowski MVC</WindowTitle>
+            <WindowTitle>Stwórz nowe danie! - Dawid Szczutkowski MVC</WindowTitle>
+            <WindowTitle>Details - Dawid Szczutkowski MVC</WindowTitle>
+            <WindowTitle>Edit - Dawid Szczutkowski MVC</WindowTitle>
+            <WindowTitle>Delete - Dawid Szczutkowski MVC</WindowTitle>
+            <WindowTitle>Index - Dawid Szczutkowski MVC</WindowTitle>
+            <WindowTitle>Create - Dawid Szczutkowski MVC</WindowTitle>
+            <WindowTitle>Kontakt - Dawid Szczutkowski MVC</WindowTitle>
+            <WindowTitle>dszczutkowski · GitHub</WindowTitle>
+            <WindowTitle>Nazwy - Dawid Szczutkowski MVC</WindowTitle>
+          </WindowTitles>
+          <SearchConfigurations>
+            <SearchConfiguration>VisibleOnly</SearchConfiguration>
+          </SearchConfigurations>
+          <AndCondition Id="SearchCondition">
+            <PropertyCondition Name="Name">Strona Główna - Dawid Szczutkowski MVC</PropertyCondition>
+            <PropertyCondition Name="ClassName">IEFrame</PropertyCondition>
+            <PropertyCondition Name="ControlType">Window</PropertyCondition>
+          </AndCondition>
+          <SupportLevel>0</SupportLevel>
+          <Descendants>
+            <UIObject ControlType="Document" Id="UIStronaGłównaDawidSzcDocument" FriendlyName="Strona Główna - Dawid Szczutkowski MVC" SpecialControlType="None">
+              <TechnologyName>Web</TechnologyName>
+              <WindowTitles>
+                <WindowTitle>Strona Główna - Dawid Szczutkowski MVC</WindowTitle>
+              </WindowTitles>
+              <AndCondition Id="SearchCondition">
+                <AndCondition Id="Primary">
+                  <PropertyCondition Name="ControlType">Document</PropertyCondition>
+                  <PropertyCondition Name="TagName">BODY</PropertyCondition>
+                  <PropertyCondition Name="Id" />
+                  <PropertyCondition Name="RedirectingPage">False</PropertyCondition>
+                  <PropertyCondition Name="FrameDocument">False</PropertyCondition>
+                </AndCondition>
+                <FilterCondition Id="Secondary">
+                  <PropertyCondition Name="Title">Strona Główna - Dawid Szczutkowski MVC</PropertyCondition>
+                  <PropertyCondition Name="AbsolutePath">/</PropertyCondition>
+                  <PropertyCondition Name="PageUrl">http://dszczutkowski-001-site1.ctempurl.com/</PropertyCondition>
+                </FilterCondition>
+              </AndCondition>
+              <SupportLevel>0</SupportLevel>
+              <Descendants>
+                <UIObject ControlType="Hyperlink" Id="UIZalogujHyperlink" FriendlyName="Zaloguj" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Strona Główna - Dawid Szczutkowski MVC</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Hyperlink</PropertyCondition>
+                      <PropertyCondition Name="TagName">A</PropertyCondition>
+                      <PropertyCondition Name="Id">loginLink</PropertyCondition>
+                      <PropertyCondition Name="Name" />
+                      <PropertyCondition Name="Target" />
+                      <PropertyCondition Name="InnerText">Zaloguj</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="AbsolutePath">/Account/Login</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Href">http://dszczutkowski-001-site1.ctempurl.com/Account/Login</PropertyCondition>
+                      <PropertyCondition Name="Class" />
+                      <PropertyCondition Name="ControlDefinition">id="loginLink" href="/Account/Login"</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">6</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+                <UIObject ControlType="Custom" Id="UILogoutFormCustom" FriendlyName="logoutForm" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Strona Główna - Dawid Szczutkowski MVC</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Custom</PropertyCondition>
+                      <PropertyCondition Name="TagName">FORM</PropertyCondition>
+                      <PropertyCondition Name="Id">logoutForm</PropertyCondition>
+                      <PropertyCondition Name="Name" />
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="Class">navbar-right</PropertyCondition>
+                      <PropertyCondition Name="ControlDefinition">class="navbar-right" id="logoutForm" act</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">1</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants>
+                    <UIObject ControlType="Hyperlink" Id="UILogoffHyperlink" FriendlyName="Log off" SpecialControlType="None">
+                      <TechnologyName>Web</TechnologyName>
+                      <WindowTitles>
+                        <WindowTitle>Strona Główna - Dawid Szczutkowski MVC</WindowTitle>
+                      </WindowTitles>
+                      <AndCondition Id="SearchCondition">
+                        <AndCondition Id="Primary">
+                          <PropertyCondition Name="ControlType">Hyperlink</PropertyCondition>
+                          <PropertyCondition Name="TagName">A</PropertyCondition>
+                          <PropertyCondition Name="Id" />
+                          <PropertyCondition Name="Name" />
+                          <PropertyCondition Name="Target" />
+                          <PropertyCondition Name="InnerText">Log off</PropertyCondition>
+                        </AndCondition>
+                        <FilterCondition Id="Secondary">
+                          <PropertyCondition Name="AbsolutePath">document.getElementById('logoutForm').submit()</PropertyCondition>
+                          <PropertyCondition Name="Title" />
+                          <PropertyCondition Name="Href">javascript:document.getElementById('logoutForm').submit()</PropertyCondition>
+                          <PropertyCondition Name="Class" />
+                          <PropertyCondition Name="ControlDefinition">href="javascript:document.getElementById</PropertyCondition>
+                          <PropertyCondition Name="TagInstance">2</PropertyCondition>
+                        </FilterCondition>
+                      </AndCondition>
+                      <SupportLevel>0</SupportLevel>
+                      <Descendants />
+                    </UIObject>
+                    <UIObject ControlType="Hyperlink" Id="UIWitajabcgmailcomHyperlink" FriendlyName="Witaj abc@gmail.com!" SpecialControlType="None">
+                      <TechnologyName>Web</TechnologyName>
+                      <WindowTitles>
+                        <WindowTitle>Strona Główna - Dawid Szczutkowski MVC</WindowTitle>
+                      </WindowTitles>
+                      <AndCondition Id="SearchCondition">
+                        <AndCondition Id="Primary">
+                          <PropertyCondition Name="ControlType">Hyperlink</PropertyCondition>
+                          <PropertyCondition Name="TagName">A</PropertyCondition>
+                          <PropertyCondition Name="Id" />
+                          <PropertyCondition Name="Name" />
+                          <PropertyCondition Name="Target" />
+                          <PropertyCondition Name="InnerText">Witaj abc@gmail.com!</PropertyCondition>
+                        </AndCondition>
+                        <FilterCondition Id="Secondary">
+                          <PropertyCondition Name="AbsolutePath">/Manage</PropertyCondition>
+                          <PropertyCondition Name="Title">Manage</PropertyCondition>
+                          <PropertyCondition Name="Href">http://dszczutkowski-001-site1.ctempurl.com/Manage</PropertyCondition>
+                          <PropertyCondition Name="Class" />
+                          <PropertyCondition Name="ControlDefinition">title="Manage" href="/Manage"</PropertyCondition>
+                          <PropertyCondition Name="TagInstance">1</PropertyCondition>
+                        </FilterCondition>
+                      </AndCondition>
+                      <SupportLevel>0</SupportLevel>
+                      <Descendants />
+                    </UIObject>
+                  </Descendants>
+                </UIObject>
+                <UIObject ControlType="Hyperlink" Id="UIPosiłkiHyperlink" FriendlyName="Posiłki" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Strona Główna - Dawid Szczutkowski MVC</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Hyperlink</PropertyCondition>
+                      <PropertyCondition Name="TagName">A</PropertyCondition>
+                      <PropertyCondition Name="Id" />
+                      <PropertyCondition Name="Name" />
+                      <PropertyCondition Name="Target" />
+                      <PropertyCondition Name="InnerText">Posiłki</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="AbsolutePath">/Meals</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Href">http://dszczutkowski-001-site1.ctempurl.com/Meals</PropertyCondition>
+                      <PropertyCondition Name="Class" />
+                      <PropertyCondition Name="ControlDefinition">href="/Meals"</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">2</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+                <UIObject ControlType="Hyperlink" Id="UIZamówieniaHyperlink" FriendlyName="Zamówienia" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Strona Główna - Dawid Szczutkowski MVC</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Hyperlink</PropertyCondition>
+                      <PropertyCondition Name="TagName">A</PropertyCondition>
+                      <PropertyCondition Name="Id" />
+                      <PropertyCondition Name="Name" />
+                      <PropertyCondition Name="Target" />
+                      <PropertyCondition Name="InnerText">Zamówienia</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="AbsolutePath">/Zamowienia</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Href">http://dszczutkowski-001-site1.ctempurl.com/Zamowienia</PropertyCondition>
+                      <PropertyCondition Name="Class" />
+                      <PropertyCondition Name="ControlDefinition">href="/Zamowienia"</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">3</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+                <UIObject ControlType="Hyperlink" Id="UIKontaktHyperlink" FriendlyName="Kontakt" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Strona Główna - Dawid Szczutkowski MVC</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Hyperlink</PropertyCondition>
+                      <PropertyCondition Name="TagName">A</PropertyCondition>
+                      <PropertyCondition Name="Id" />
+                      <PropertyCondition Name="Name" />
+                      <PropertyCondition Name="Target" />
+                      <PropertyCondition Name="InnerText">Kontakt</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="AbsolutePath">/Home/Contact</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Href">http://dszczutkowski-001-site1.ctempurl.com/Home/Contact</PropertyCondition>
+                      <PropertyCondition Name="Class" />
+                      <PropertyCondition Name="ControlDefinition">href="/Home/Contact"</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">4</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+                <UIObject ControlType="Hyperlink" Id="UIPosiłkiHyperlink1" FriendlyName=" Posiłki »" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Strona Główna - Dawid Szczutkowski MVC</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Hyperlink</PropertyCondition>
+                      <PropertyCondition Name="TagName">A</PropertyCondition>
+                      <PropertyCondition Name="Id" />
+                      <PropertyCondition Name="Name" />
+                      <PropertyCondition Name="Target" />
+                      <PropertyCondition Name="InnerText"> Posiłki »</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="AbsolutePath">/Posilki/Nazwy</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Href">http://dszczutkowski-001-site1.ctempurl.com/Posilki/Nazwy</PropertyCondition>
+                      <PropertyCondition Name="Class">btn btn-primary btn-lg</PropertyCondition>
+                      <PropertyCondition Name="ControlDefinition">class="btn btn-primary btn-lg" href="../</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">7</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+                <UIObject ControlType="Hyperlink" Id="UIZamówieniaHyperlink1" FriendlyName=" Zamówienia »" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Strona Główna - Dawid Szczutkowski MVC</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Hyperlink</PropertyCondition>
+                      <PropertyCondition Name="TagName">A</PropertyCondition>
+                      <PropertyCondition Name="Id" />
+                      <PropertyCondition Name="Name" />
+                      <PropertyCondition Name="Target" />
+                      <PropertyCondition Name="InnerText"> Zamówienia »</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="AbsolutePath">/Zamowienia</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Href">http://dszczutkowski-001-site1.ctempurl.com/Zamowienia</PropertyCondition>
+                      <PropertyCondition Name="Class">btn btn-primary btn-lg</PropertyCondition>
+                      <PropertyCondition Name="ControlDefinition">class="btn btn-primary btn-lg" href="../</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">8</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+              </Descendants>
+            </UIObject>
+            <UIObject ControlType="Document" Id="UILogowanieDawidSzczutDocument" FriendlyName="Logowanie - Dawid Szczutkowski MVC" SpecialControlType="None">
+              <TechnologyName>Web</TechnologyName>
+              <WindowTitles>
+                <WindowTitle>Logowanie - Dawid Szczutkowski MVC</WindowTitle>
+              </WindowTitles>
+              <AndCondition Id="SearchCondition">
+                <AndCondition Id="Primary">
+                  <PropertyCondition Name="ControlType">Document</PropertyCondition>
+                  <PropertyCondition Name="TagName">BODY</PropertyCondition>
+                  <PropertyCondition Name="Id" />
+                  <PropertyCondition Name="RedirectingPage">False</PropertyCondition>
+                  <PropertyCondition Name="FrameDocument">False</PropertyCondition>
+                </AndCondition>
+                <FilterCondition Id="Secondary">
+                  <PropertyCondition Name="Title">Logowanie - Dawid Szczutkowski MVC</PropertyCondition>
+                  <PropertyCondition Name="AbsolutePath">/Account/Login</PropertyCondition>
+                  <PropertyCondition Name="PageUrl">http://dszczutkowski-001-site1.ctempurl.com/Account/Login</PropertyCondition>
+                </FilterCondition>
+              </AndCondition>
+              <SupportLevel>0</SupportLevel>
+              <Descendants>
+                <UIObject ControlType="Edit" Id="UIEmailEdit" FriendlyName="Email" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Logowanie - Dawid Szczutkowski MVC</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Edit</PropertyCondition>
+                      <PropertyCondition Name="TagName">INPUT</PropertyCondition>
+                      <PropertyCondition Name="Id">Email</PropertyCondition>
+                      <PropertyCondition Name="Name">Email</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="LabeledBy">Email</PropertyCondition>
+                      <PropertyCondition Name="Type">SINGLELINE</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Class">form-control</PropertyCondition>
+                      <PropertyCondition Name="ControlDefinition">name="Email" class="form-control" id="Em</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">2</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+                <UIObject ControlType="Edit" Id="UIHasłoEdit" FriendlyName="Hasło" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Logowanie - Dawid Szczutkowski MVC</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Edit</PropertyCondition>
+                      <PropertyCondition Name="TagName">INPUT</PropertyCondition>
+                      <PropertyCondition Name="Id">Password</PropertyCondition>
+                      <PropertyCondition Name="Name">Password</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="LabeledBy">Hasło</PropertyCondition>
+                      <PropertyCondition Name="Type">PASSWORD</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Class">form-control</PropertyCondition>
+                      <PropertyCondition Name="ControlDefinition">name="Password" class="form-control" id=</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">3</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+                <UIObject ControlType="Custom" Id="UILoginFormCustom" FriendlyName="loginForm" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Logowanie - Dawid Szczutkowski MVC</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Custom</PropertyCondition>
+                      <PropertyCondition Name="TagName">SECTION</PropertyCondition>
+                      <PropertyCondition Name="Id">loginForm</PropertyCondition>
+                      <PropertyCondition Name="Name" />
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="Class" />
+                      <PropertyCondition Name="ControlDefinition">id="loginForm"</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">1</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants>
+                    <UIObject ControlType="Button" Id="UIZalogujButton" FriendlyName="Zaloguj" SpecialControlType="None">
+                      <TechnologyName>Web</TechnologyName>
+                      <WindowTitles>
+                        <WindowTitle>Logowanie - Dawid Szczutkowski MVC</WindowTitle>
+                      </WindowTitles>
+                      <AndCondition Id="SearchCondition">
+                        <AndCondition Id="Primary">
+                          <PropertyCondition Name="ControlType">Button</PropertyCondition>
+                          <PropertyCondition Name="TagName">INPUT</PropertyCondition>
+                          <PropertyCondition Name="Id" />
+                          <PropertyCondition Name="Name" />
+                          <PropertyCondition Name="DisplayText">Zaloguj</PropertyCondition>
+                          <PropertyCondition Name="Type">submit</PropertyCondition>
+                        </AndCondition>
+                        <FilterCondition Id="Secondary">
+                          <PropertyCondition Name="Title" />
+                          <PropertyCondition Name="Class">btn btn-default</PropertyCondition>
+                          <PropertyCondition Name="ControlDefinition">class="btn btn-default" type="submit" va</PropertyCondition>
+                          <PropertyCondition Name="TagInstance">6</PropertyCondition>
+                        </FilterCondition>
+                      </AndCondition>
+                      <SupportLevel>0</SupportLevel>
+                      <Descendants />
+                    </UIObject>
+                  </Descendants>
+                </UIObject>
+              </Descendants>
+            </UIObject>
+            <UIObject ControlType="Document" Id="UIPosiłkiDawidSzczutkoDocument" FriendlyName="Posiłki - Dawid Szczutkowski MVC" SpecialControlType="None">
+              <TechnologyName>Web</TechnologyName>
+              <WindowTitles>
+                <WindowTitle>Posiłki - Dawid Szczutkowski MVC</WindowTitle>
+              </WindowTitles>
+              <AndCondition Id="SearchCondition">
+                <AndCondition Id="Primary">
+                  <PropertyCondition Name="ControlType">Document</PropertyCondition>
+                  <PropertyCondition Name="TagName">BODY</PropertyCondition>
+                  <PropertyCondition Name="Id" />
+                  <PropertyCondition Name="RedirectingPage">False</PropertyCondition>
+                  <PropertyCondition Name="FrameDocument">False</PropertyCondition>
+                </AndCondition>
+                <FilterCondition Id="Secondary">
+                  <PropertyCondition Name="Title">Posiłki - Dawid Szczutkowski MVC</PropertyCondition>
+                  <PropertyCondition Name="AbsolutePath">/Meals</PropertyCondition>
+                  <PropertyCondition Name="PageUrl">http://dszczutkowski-001-site1.ctempurl.com/Meals</PropertyCondition>
+                </FilterCondition>
+              </AndCondition>
+              <SupportLevel>0</SupportLevel>
+              <Descendants>
+                <UIObject ControlType="Hyperlink" Id="UIStwórznowedanieHyperlink" FriendlyName="Stwórz nowe danie" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Posiłki - Dawid Szczutkowski MVC</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Hyperlink</PropertyCondition>
+                      <PropertyCondition Name="TagName">A</PropertyCondition>
+                      <PropertyCondition Name="Id" />
+                      <PropertyCondition Name="Name" />
+                      <PropertyCondition Name="Target" />
+                      <PropertyCondition Name="InnerText">Stwórz nowe danie</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="AbsolutePath">/Meals/Create</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Href">http://dszczutkowski-001-site1.ctempurl.com/Meals/Create</PropertyCondition>
+                      <PropertyCondition Name="Class" />
+                      <PropertyCondition Name="ControlDefinition">href="/Meals/Create"</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">7</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+                <UIObject ControlType="Hyperlink" Id="UISortujHyperlink" FriendlyName="Sortuj" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Posiłki - Dawid Szczutkowski MVC</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Hyperlink</PropertyCondition>
+                      <PropertyCondition Name="TagName">A</PropertyCondition>
+                      <PropertyCondition Name="Id" />
+                      <PropertyCondition Name="Name" />
+                      <PropertyCondition Name="Target" />
+                      <PropertyCondition Name="InnerText">Sortuj</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="AbsolutePath">/Meals/SortByName</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Href">http://dszczutkowski-001-site1.ctempurl.com/Meals/SortByName</PropertyCondition>
+                      <PropertyCondition Name="Class" />
+                      <PropertyCondition Name="ControlDefinition">href="/Meals/SortByName"</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">8</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+                <UIObject ControlType="Hyperlink" Id="UIEdytujHyperlink" FriendlyName="Edytuj" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Posiłki - Dawid Szczutkowski MVC</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Hyperlink</PropertyCondition>
+                      <PropertyCondition Name="TagName">A</PropertyCondition>
+                      <PropertyCondition Name="Id" />
+                      <PropertyCondition Name="Name" />
+                      <PropertyCondition Name="Target" />
+                      <PropertyCondition Name="InnerText">Edytuj</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="AbsolutePath">/Meals/Edit/5</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Href">http://dszczutkowski-001-site1.ctempurl.com/Meals/Edit/5</PropertyCondition>
+                      <PropertyCondition Name="Class" />
+                      <PropertyCondition Name="ControlDefinition">href="/Meals/Edit/5"</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">21</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+                <UIObject ControlType="Hyperlink" Id="UIUsuńHyperlink" FriendlyName="Usuń" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Posiłki - Dawid Szczutkowski MVC</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Hyperlink</PropertyCondition>
+                      <PropertyCondition Name="TagName">A</PropertyCondition>
+                      <PropertyCondition Name="Id" />
+                      <PropertyCondition Name="Name" />
+                      <PropertyCondition Name="Target" />
+                      <PropertyCondition Name="InnerText">Usuń</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="AbsolutePath">/Meals/Delete/5</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Href">http://dszczutkowski-001-site1.ctempurl.com/Meals/Delete/5</PropertyCondition>
+                      <PropertyCondition Name="Class" />
+                      <PropertyCondition Name="ControlDefinition">href="/Meals/Delete/5"</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">23</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+                <UIObject ControlType="Hyperlink" Id="UIUsuńHyperlink1" FriendlyName="Usuń" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Posiłki - Dawid Szczutkowski MVC</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Hyperlink</PropertyCondition>
+                      <PropertyCondition Name="TagName">A</PropertyCondition>
+                      <PropertyCondition Name="Id" />
+                      <PropertyCondition Name="Name" />
+                      <PropertyCondition Name="Target" />
+                      <PropertyCondition Name="InnerText">Usuń</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="AbsolutePath">/Meals/Delete/4</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Href">http://dszczutkowski-001-site1.ctempurl.com/Meals/Delete/4</PropertyCondition>
+                      <PropertyCondition Name="Class" />
+                      <PropertyCondition Name="ControlDefinition">href="/Meals/Delete/4"</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">20</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+                <UIObject ControlType="Hyperlink" Id="UIUsuńHyperlink2" FriendlyName="Usuń" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Posiłki - Dawid Szczutkowski MVC</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Hyperlink</PropertyCondition>
+                      <PropertyCondition Name="TagName">A</PropertyCondition>
+                      <PropertyCondition Name="Id" />
+                      <PropertyCondition Name="Name" />
+                      <PropertyCondition Name="Target" />
+                      <PropertyCondition Name="InnerText">Usuń</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="AbsolutePath">/Meals/Delete/3</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Href">http://dszczutkowski-001-site1.ctempurl.com/Meals/Delete/3</PropertyCondition>
+                      <PropertyCondition Name="Class" />
+                      <PropertyCondition Name="ControlDefinition">href="/Meals/Delete/3"</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">17</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+                <UIObject ControlType="Hyperlink" Id="UIUsuńHyperlink3" FriendlyName="Usuń" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Posiłki - Dawid Szczutkowski MVC</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Hyperlink</PropertyCondition>
+                      <PropertyCondition Name="TagName">A</PropertyCondition>
+                      <PropertyCondition Name="Id" />
+                      <PropertyCondition Name="Name" />
+                      <PropertyCondition Name="Target" />
+                      <PropertyCondition Name="InnerText">Usuń</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="AbsolutePath">/Meals/Delete/2</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Href">http://dszczutkowski-001-site1.ctempurl.com/Meals/Delete/2</PropertyCondition>
+                      <PropertyCondition Name="Class" />
+                      <PropertyCondition Name="ControlDefinition">href="/Meals/Delete/2"</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">14</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+                <UIObject ControlType="Hyperlink" Id="UIDawidSzczutkowskiMVCHyperlink" FriendlyName="Dawid Szczutkowski MVC" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Posiłki - Dawid Szczutkowski MVC</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Hyperlink</PropertyCondition>
+                      <PropertyCondition Name="TagName">A</PropertyCondition>
+                      <PropertyCondition Name="Id" />
+                      <PropertyCondition Name="Name" />
+                      <PropertyCondition Name="Target" />
+                      <PropertyCondition Name="InnerText">Dawid Szczutkowski MVC</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="AbsolutePath">/</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Href">http://dszczutkowski-001-site1.ctempurl.com/</PropertyCondition>
+                      <PropertyCondition Name="Class">navbar-brand</PropertyCondition>
+                      <PropertyCondition Name="ControlDefinition">class="navbar-brand" href="/"</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">1</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+              </Descendants>
+            </UIObject>
+            <UIObject ControlType="Document" Id="UIStwórznowedanieDawidDocument" FriendlyName="Stwórz nowe danie! - Dawid Szczutkowski MVC" SpecialControlType="None">
+              <TechnologyName>Web</TechnologyName>
+              <WindowTitles>
+                <WindowTitle>Stwórz nowe danie! - Dawid Szczutkowski MVC</WindowTitle>
+              </WindowTitles>
+              <AndCondition Id="SearchCondition">
+                <AndCondition Id="Primary">
+                  <PropertyCondition Name="ControlType">Document</PropertyCondition>
+                  <PropertyCondition Name="TagName">BODY</PropertyCondition>
+                  <PropertyCondition Name="Id" />
+                  <PropertyCondition Name="RedirectingPage">False</PropertyCondition>
+                  <PropertyCondition Name="FrameDocument">False</PropertyCondition>
+                </AndCondition>
+                <FilterCondition Id="Secondary">
+                  <PropertyCondition Name="Title">Stwórz nowe danie! - Dawid Szczutkowski MVC</PropertyCondition>
+                  <PropertyCondition Name="AbsolutePath">/Meals/Create</PropertyCondition>
+                  <PropertyCondition Name="PageUrl">http://dszczutkowski-001-site1.ctempurl.com/Meals/Create</PropertyCondition>
+                </FilterCondition>
+              </AndCondition>
+              <SupportLevel>0</SupportLevel>
+              <Descendants>
+                <UIObject ControlType="Edit" Id="UINazwaEdit" FriendlyName="Nazwa" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Stwórz nowe danie! - Dawid Szczutkowski MVC</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Edit</PropertyCondition>
+                      <PropertyCondition Name="TagName">INPUT</PropertyCondition>
+                      <PropertyCondition Name="Id">Name</PropertyCondition>
+                      <PropertyCondition Name="Name">Name</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="LabeledBy">Nazwa</PropertyCondition>
+                      <PropertyCondition Name="Type">SINGLELINE</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Class">form-control text-box single-line</PropertyCondition>
+                      <PropertyCondition Name="ControlDefinition">name="Name" class="form-control text-box</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">3</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+                <UIObject ControlType="Edit" Id="UICenaEdit" FriendlyName="Cena" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Stwórz nowe danie! - Dawid Szczutkowski MVC</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Edit</PropertyCondition>
+                      <PropertyCondition Name="TagName">INPUT</PropertyCondition>
+                      <PropertyCondition Name="Id">Price</PropertyCondition>
+                      <PropertyCondition Name="Name">Price</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="LabeledBy">Cena</PropertyCondition>
+                      <PropertyCondition Name="Type">SINGLELINE</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Class">form-control text-box single-line</PropertyCondition>
+                      <PropertyCondition Name="ControlDefinition">name="Price" class="form-control text-bo</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">4</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+                <UIObject ControlType="Button" Id="UICreateButton" FriendlyName="Create" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Stwórz nowe danie! - Dawid Szczutkowski MVC</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Button</PropertyCondition>
+                      <PropertyCondition Name="TagName">INPUT</PropertyCondition>
+                      <PropertyCondition Name="Id" />
+                      <PropertyCondition Name="Name" />
+                      <PropertyCondition Name="DisplayText">Create</PropertyCondition>
+                      <PropertyCondition Name="Type">submit</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Class">btn btn-default</PropertyCondition>
+                      <PropertyCondition Name="ControlDefinition">class="btn btn-default" type="submit" va</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">5</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+              </Descendants>
+            </UIObject>
+            <UIObject ControlType="Document" Id="UIPosiłkiDawidSzczutkoDocument4" FriendlyName="Posiłki - Dawid Szczutkowski MVC" SpecialControlType="None">
+              <TechnologyName>Web</TechnologyName>
+              <WindowTitles>
+                <WindowTitle>Posiłki - Dawid Szczutkowski MVC</WindowTitle>
+              </WindowTitles>
+              <AndCondition Id="SearchCondition">
+                <AndCondition Id="Primary">
+                  <PropertyCondition Name="ControlType">Document</PropertyCondition>
+                  <PropertyCondition Name="TagName">BODY</PropertyCondition>
+                  <PropertyCondition Name="Id" />
+                  <PropertyCondition Name="RedirectingPage">False</PropertyCondition>
+                  <PropertyCondition Name="FrameDocument">False</PropertyCondition>
+                </AndCondition>
+                <FilterCondition Id="Secondary">
+                  <PropertyCondition Name="Title">Posiłki - Dawid Szczutkowski MVC</PropertyCondition>
+                  <PropertyCondition Name="AbsolutePath">/Meals/SortByName</PropertyCondition>
+                  <PropertyCondition Name="PageUrl">http://dszczutkowski-001-site1.ctempurl.com/Meals/SortByName</PropertyCondition>
+                </FilterCondition>
+              </AndCondition>
+              <SupportLevel>0</SupportLevel>
+              <Descendants>
+                <UIObject ControlType="Hyperlink" Id="UIStwórznowedanieHyperlink" FriendlyName="Stwórz nowe danie" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Posiłki - Dawid Szczutkowski MVC</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Hyperlink</PropertyCondition>
+                      <PropertyCondition Name="TagName">A</PropertyCondition>
+                      <PropertyCondition Name="Id" />
+                      <PropertyCondition Name="Name" />
+                      <PropertyCondition Name="Target" />
+                      <PropertyCondition Name="InnerText">Stwórz nowe danie</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="AbsolutePath">/Meals/Create</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Href">http://dszczutkowski-001-site1.ctempurl.com/Meals/Create</PropertyCondition>
+                      <PropertyCondition Name="Class" />
+                      <PropertyCondition Name="ControlDefinition">href="/Meals/Create"</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">7</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+                <UIObject ControlType="Hyperlink" Id="UISzczegółyHyperlink" FriendlyName="Szczegóły" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Posiłki - Dawid Szczutkowski MVC</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Hyperlink</PropertyCondition>
+                      <PropertyCondition Name="TagName">A</PropertyCondition>
+                      <PropertyCondition Name="Id" />
+                      <PropertyCondition Name="Name" />
+                      <PropertyCondition Name="Target" />
+                      <PropertyCondition Name="InnerText">Szczegóły</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="AbsolutePath">/Meals/Details/4</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Href">http://dszczutkowski-001-site1.ctempurl.com/Meals/Details/4</PropertyCondition>
+                      <PropertyCondition Name="Class" />
+                      <PropertyCondition Name="ControlDefinition">href="/Meals/Details/4"</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">22</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+              </Descendants>
+            </UIObject>
+            <UIObject ControlType="Document" Id="UIDetailsDawidSzczutkoDocument" FriendlyName="Details - Dawid Szczutkowski MVC" SpecialControlType="None">
+              <TechnologyName>Web</TechnologyName>
+              <WindowTitles>
+                <WindowTitle>Details - Dawid Szczutkowski MVC</WindowTitle>
+              </WindowTitles>
+              <AndCondition Id="SearchCondition">
+                <AndCondition Id="Primary">
+                  <PropertyCondition Name="ControlType">Document</PropertyCondition>
+                  <PropertyCondition Name="TagName">BODY</PropertyCondition>
+                  <PropertyCondition Name="Id" />
+                  <PropertyCondition Name="RedirectingPage">False</PropertyCondition>
+                  <PropertyCondition Name="FrameDocument">False</PropertyCondition>
+                </AndCondition>
+                <FilterCondition Id="Secondary">
+                  <PropertyCondition Name="Title">Details - Dawid Szczutkowski MVC</PropertyCondition>
+                  <PropertyCondition Name="AbsolutePath">/Meals/Details/4</PropertyCondition>
+                  <PropertyCondition Name="PageUrl">http://dszczutkowski-001-site1.ctempurl.com/Meals/Details/4</PropertyCondition>
+                </FilterCondition>
+              </AndCondition>
+              <SupportLevel>0</SupportLevel>
+              <Descendants>
+                <UIObject ControlType="Hyperlink" Id="UIBacktoListHyperlink" FriendlyName="Back to List" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Details - Dawid Szczutkowski MVC</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Hyperlink</PropertyCondition>
+                      <PropertyCondition Name="TagName">A</PropertyCondition>
+                      <PropertyCondition Name="Id" />
+                      <PropertyCondition Name="Name" />
+                      <PropertyCondition Name="Target" />
+                      <PropertyCondition Name="InnerText">Back to List</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="AbsolutePath">/Meals</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Href">http://dszczutkowski-001-site1.ctempurl.com/Meals</PropertyCondition>
+                      <PropertyCondition Name="Class" />
+                      <PropertyCondition Name="ControlDefinition">href="/Meals"</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">8</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+              </Descendants>
+            </UIObject>
+            <UIObject ControlType="Document" Id="UIEditDawidSzczutkowskDocument" FriendlyName="Edit - Dawid Szczutkowski MVC" SpecialControlType="None">
+              <TechnologyName>Web</TechnologyName>
+              <WindowTitles>
+                <WindowTitle>Edit - Dawid Szczutkowski MVC</WindowTitle>
+              </WindowTitles>
+              <AndCondition Id="SearchCondition">
+                <AndCondition Id="Primary">
+                  <PropertyCondition Name="ControlType">Document</PropertyCondition>
+                  <PropertyCondition Name="TagName">BODY</PropertyCondition>
+                  <PropertyCondition Name="Id" />
+                  <PropertyCondition Name="RedirectingPage">False</PropertyCondition>
+                  <PropertyCondition Name="FrameDocument">False</PropertyCondition>
+                </AndCondition>
+                <FilterCondition Id="Secondary">
+                  <PropertyCondition Name="Title">Edit - Dawid Szczutkowski MVC</PropertyCondition>
+                  <PropertyCondition Name="AbsolutePath">/Meals/Edit/5</PropertyCondition>
+                  <PropertyCondition Name="PageUrl">http://dszczutkowski-001-site1.ctempurl.com/Meals/Edit/5</PropertyCondition>
+                </FilterCondition>
+              </AndCondition>
+              <SupportLevel>0</SupportLevel>
+              <Descendants>
+                <UIObject ControlType="Edit" Id="UINazwaEdit" FriendlyName="Nazwa" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Edit - Dawid Szczutkowski MVC</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Edit</PropertyCondition>
+                      <PropertyCondition Name="TagName">INPUT</PropertyCondition>
+                      <PropertyCondition Name="Id">Name</PropertyCondition>
+                      <PropertyCondition Name="Name">Name</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="LabeledBy">Nazwa</PropertyCondition>
+                      <PropertyCondition Name="Type">SINGLELINE</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Class">form-control text-box single-line</PropertyCondition>
+                      <PropertyCondition Name="ControlDefinition">name="Name" class="form-control text-box</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">4</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+                <UIObject ControlType="Edit" Id="UICenaEdit" FriendlyName="Cena" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Edit - Dawid Szczutkowski MVC</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Edit</PropertyCondition>
+                      <PropertyCondition Name="TagName">INPUT</PropertyCondition>
+                      <PropertyCondition Name="Id">Price</PropertyCondition>
+                      <PropertyCondition Name="Name">Price</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="LabeledBy">Cena</PropertyCondition>
+                      <PropertyCondition Name="Type">SINGLELINE</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Class">form-control text-box single-line</PropertyCondition>
+                      <PropertyCondition Name="ControlDefinition">name="Price" class="form-control text-bo</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">5</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+                <UIObject ControlType="Button" Id="UISaveButton" FriendlyName="Save" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Edit - Dawid Szczutkowski MVC</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Button</PropertyCondition>
+                      <PropertyCondition Name="TagName">INPUT</PropertyCondition>
+                      <PropertyCondition Name="Id" />
+                      <PropertyCondition Name="Name" />
+                      <PropertyCondition Name="DisplayText">Save</PropertyCondition>
+                      <PropertyCondition Name="Type">submit</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Class">btn btn-default</PropertyCondition>
+                      <PropertyCondition Name="ControlDefinition">class="btn btn-default" type="submit" va</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">6</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+              </Descendants>
+            </UIObject>
+            <UIObject ControlType="Document" Id="UIDeleteDawidSzczutkowDocument" FriendlyName="Delete - Dawid Szczutkowski MVC" SpecialControlType="None">
+              <TechnologyName>Web</TechnologyName>
+              <WindowTitles>
+                <WindowTitle>Delete - Dawid Szczutkowski MVC</WindowTitle>
+              </WindowTitles>
+              <AndCondition Id="SearchCondition">
+                <AndCondition Id="Primary">
+                  <PropertyCondition Name="ControlType">Document</PropertyCondition>
+                  <PropertyCondition Name="TagName">BODY</PropertyCondition>
+                  <PropertyCondition Name="Id" />
+                  <PropertyCondition Name="RedirectingPage">False</PropertyCondition>
+                  <PropertyCondition Name="FrameDocument">False</PropertyCondition>
+                </AndCondition>
+                <FilterCondition Id="Secondary">
+                  <PropertyCondition Name="Title">Delete - Dawid Szczutkowski MVC</PropertyCondition>
+                  <PropertyCondition Name="AbsolutePath">/Meals/Delete/5</PropertyCondition>
+                  <PropertyCondition Name="PageUrl">http://dszczutkowski-001-site1.ctempurl.com/Meals/Delete/5</PropertyCondition>
+                </FilterCondition>
+              </AndCondition>
+              <SupportLevel>0</SupportLevel>
+              <Descendants>
+                <UIObject ControlType="Button" Id="UIDeleteButton" FriendlyName="Delete" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Delete - Dawid Szczutkowski MVC</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Button</PropertyCondition>
+                      <PropertyCondition Name="TagName">INPUT</PropertyCondition>
+                      <PropertyCondition Name="Id" />
+                      <PropertyCondition Name="Name" />
+                      <PropertyCondition Name="DisplayText">Delete</PropertyCondition>
+                      <PropertyCondition Name="Type">submit</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Class">btn btn-default</PropertyCondition>
+                      <PropertyCondition Name="ControlDefinition">class="btn btn-default" type="submit" va</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">3</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+              </Descendants>
+            </UIObject>
+            <UIObject ControlType="Document" Id="UIDeleteDawidSzczutkowDocument1" FriendlyName="Delete - Dawid Szczutkowski MVC" SpecialControlType="None">
+              <TechnologyName>Web</TechnologyName>
+              <WindowTitles>
+                <WindowTitle>Delete - Dawid Szczutkowski MVC</WindowTitle>
+              </WindowTitles>
+              <AndCondition Id="SearchCondition">
+                <AndCondition Id="Primary">
+                  <PropertyCondition Name="ControlType">Document</PropertyCondition>
+                  <PropertyCondition Name="TagName">BODY</PropertyCondition>
+                  <PropertyCondition Name="Id" />
+                  <PropertyCondition Name="RedirectingPage">False</PropertyCondition>
+                  <PropertyCondition Name="FrameDocument">False</PropertyCondition>
+                </AndCondition>
+                <FilterCondition Id="Secondary">
+                  <PropertyCondition Name="Title">Delete - Dawid Szczutkowski MVC</PropertyCondition>
+                  <PropertyCondition Name="AbsolutePath">/Meals/Delete/4</PropertyCondition>
+                  <PropertyCondition Name="PageUrl">http://dszczutkowski-001-site1.ctempurl.com/Meals/Delete/4</PropertyCondition>
+                </FilterCondition>
+              </AndCondition>
+              <SupportLevel>0</SupportLevel>
+              <Descendants>
+                <UIObject ControlType="Button" Id="UIDeleteButton" FriendlyName="Delete" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Delete - Dawid Szczutkowski MVC</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Button</PropertyCondition>
+                      <PropertyCondition Name="TagName">INPUT</PropertyCondition>
+                      <PropertyCondition Name="Id" />
+                      <PropertyCondition Name="Name" />
+                      <PropertyCondition Name="DisplayText">Delete</PropertyCondition>
+                      <PropertyCondition Name="Type">submit</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Class">btn btn-default</PropertyCondition>
+                      <PropertyCondition Name="ControlDefinition">class="btn btn-default" type="submit" va</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">3</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+              </Descendants>
+            </UIObject>
+            <UIObject ControlType="Document" Id="UIDeleteDawidSzczutkowDocument2" FriendlyName="Delete - Dawid Szczutkowski MVC" SpecialControlType="None">
+              <TechnologyName>Web</TechnologyName>
+              <WindowTitles>
+                <WindowTitle>Delete - Dawid Szczutkowski MVC</WindowTitle>
+              </WindowTitles>
+              <AndCondition Id="SearchCondition">
+                <AndCondition Id="Primary">
+                  <PropertyCondition Name="ControlType">Document</PropertyCondition>
+                  <PropertyCondition Name="TagName">BODY</PropertyCondition>
+                  <PropertyCondition Name="Id" />
+                  <PropertyCondition Name="RedirectingPage">False</PropertyCondition>
+                  <PropertyCondition Name="FrameDocument">False</PropertyCondition>
+                </AndCondition>
+                <FilterCondition Id="Secondary">
+                  <PropertyCondition Name="Title">Delete - Dawid Szczutkowski MVC</PropertyCondition>
+                  <PropertyCondition Name="AbsolutePath">/Meals/Delete/3</PropertyCondition>
+                  <PropertyCondition Name="PageUrl">http://dszczutkowski-001-site1.ctempurl.com/Meals/Delete/3</PropertyCondition>
+                </FilterCondition>
+              </AndCondition>
+              <SupportLevel>0</SupportLevel>
+              <Descendants>
+                <UIObject ControlType="Button" Id="UIDeleteButton" FriendlyName="Delete" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Delete - Dawid Szczutkowski MVC</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Button</PropertyCondition>
+                      <PropertyCondition Name="TagName">INPUT</PropertyCondition>
+                      <PropertyCondition Name="Id" />
+                      <PropertyCondition Name="Name" />
+                      <PropertyCondition Name="DisplayText">Delete</PropertyCondition>
+                      <PropertyCondition Name="Type">submit</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Class">btn btn-default</PropertyCondition>
+                      <PropertyCondition Name="ControlDefinition">class="btn btn-default" type="submit" va</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">3</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+              </Descendants>
+            </UIObject>
+            <UIObject ControlType="Document" Id="UIDeleteDawidSzczutkowDocument3" FriendlyName="Delete - Dawid Szczutkowski MVC" SpecialControlType="None">
+              <TechnologyName>Web</TechnologyName>
+              <WindowTitles>
+                <WindowTitle>Delete - Dawid Szczutkowski MVC</WindowTitle>
+              </WindowTitles>
+              <AndCondition Id="SearchCondition">
+                <AndCondition Id="Primary">
+                  <PropertyCondition Name="ControlType">Document</PropertyCondition>
+                  <PropertyCondition Name="TagName">BODY</PropertyCondition>
+                  <PropertyCondition Name="Id" />
+                  <PropertyCondition Name="RedirectingPage">False</PropertyCondition>
+                  <PropertyCondition Name="FrameDocument">False</PropertyCondition>
+                </AndCondition>
+                <FilterCondition Id="Secondary">
+                  <PropertyCondition Name="Title">Delete - Dawid Szczutkowski MVC</PropertyCondition>
+                  <PropertyCondition Name="AbsolutePath">/Meals/Delete/2</PropertyCondition>
+                  <PropertyCondition Name="PageUrl">http://dszczutkowski-001-site1.ctempurl.com/Meals/Delete/2</PropertyCondition>
+                </FilterCondition>
+              </AndCondition>
+              <SupportLevel>0</SupportLevel>
+              <Descendants>
+                <UIObject ControlType="Button" Id="UIDeleteButton" FriendlyName="Delete" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Delete - Dawid Szczutkowski MVC</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Button</PropertyCondition>
+                      <PropertyCondition Name="TagName">INPUT</PropertyCondition>
+                      <PropertyCondition Name="Id" />
+                      <PropertyCondition Name="Name" />
+                      <PropertyCondition Name="DisplayText">Delete</PropertyCondition>
+                      <PropertyCondition Name="Type">submit</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Class">btn btn-default</PropertyCondition>
+                      <PropertyCondition Name="ControlDefinition">class="btn btn-default" type="submit" va</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">3</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+              </Descendants>
+            </UIObject>
+            <UIObject ControlType="Document" Id="UIIndexDawidSzczutkowsDocument" FriendlyName="Index - Dawid Szczutkowski MVC" SpecialControlType="None">
+              <TechnologyName>Web</TechnologyName>
+              <WindowTitles>
+                <WindowTitle>Index - Dawid Szczutkowski MVC</WindowTitle>
+              </WindowTitles>
+              <AndCondition Id="SearchCondition">
+                <AndCondition Id="Primary">
+                  <PropertyCondition Name="ControlType">Document</PropertyCondition>
+                  <PropertyCondition Name="TagName">BODY</PropertyCondition>
+                  <PropertyCondition Name="Id" />
+                  <PropertyCondition Name="RedirectingPage">False</PropertyCondition>
+                  <PropertyCondition Name="FrameDocument">False</PropertyCondition>
+                </AndCondition>
+                <FilterCondition Id="Secondary">
+                  <PropertyCondition Name="Title">Index - Dawid Szczutkowski MVC</PropertyCondition>
+                  <PropertyCondition Name="AbsolutePath">/Zamowienia</PropertyCondition>
+                  <PropertyCondition Name="PageUrl">http://dszczutkowski-001-site1.ctempurl.com/Zamowienia</PropertyCondition>
+                </FilterCondition>
+              </AndCondition>
+              <SupportLevel>0</SupportLevel>
+              <Descendants>
+                <UIObject ControlType="Hyperlink" Id="UIStwórznowezamówienieHyperlink" FriendlyName="Stwórz nowe zamówienie" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Index - Dawid Szczutkowski MVC</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Hyperlink</PropertyCondition>
+                      <PropertyCondition Name="TagName">A</PropertyCondition>
+                      <PropertyCondition Name="Id" />
+                      <PropertyCondition Name="Name" />
+                      <PropertyCondition Name="Target" />
+                      <PropertyCondition Name="InnerText">Stwórz nowe zamówienie</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="AbsolutePath">/Orders/Create</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Href">http://dszczutkowski-001-site1.ctempurl.com/Orders/Create</PropertyCondition>
+                      <PropertyCondition Name="Class" />
+                      <PropertyCondition Name="ControlDefinition">href="/Orders/Create"</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">7</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+                <UIObject ControlType="Hyperlink" Id="UISzczegółyHyperlink" FriendlyName="Szczegóły" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Index - Dawid Szczutkowski MVC</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Hyperlink</PropertyCondition>
+                      <PropertyCondition Name="TagName">A</PropertyCondition>
+                      <PropertyCondition Name="Id" />
+                      <PropertyCondition Name="Name" />
+                      <PropertyCondition Name="Target" />
+                      <PropertyCondition Name="InnerText">Szczegóły</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="AbsolutePath">/Zamowienia/2</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Href">http://dszczutkowski-001-site1.ctempurl.com/Zamowienia/2</PropertyCondition>
+                      <PropertyCondition Name="Class" />
+                      <PropertyCondition Name="ControlDefinition">href="/Zamowienia/2"</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">12</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+                <UIObject ControlType="Hyperlink" Id="UIEdytujHyperlink" FriendlyName="Edytuj" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Index - Dawid Szczutkowski MVC</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Hyperlink</PropertyCondition>
+                      <PropertyCondition Name="TagName">A</PropertyCondition>
+                      <PropertyCondition Name="Id" />
+                      <PropertyCondition Name="Name" />
+                      <PropertyCondition Name="Target" />
+                      <PropertyCondition Name="InnerText">Edytuj</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="AbsolutePath">/Orders/Edit/1</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Href">http://dszczutkowski-001-site1.ctempurl.com/Orders/Edit/1</PropertyCondition>
+                      <PropertyCondition Name="Class" />
+                      <PropertyCondition Name="ControlDefinition">href="/Orders/Edit/1"</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">8</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+                <UIObject ControlType="Hyperlink" Id="UIUsuńHyperlink" FriendlyName="Usuń" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Index - Dawid Szczutkowski MVC</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Hyperlink</PropertyCondition>
+                      <PropertyCondition Name="TagName">A</PropertyCondition>
+                      <PropertyCondition Name="Id" />
+                      <PropertyCondition Name="Name" />
+                      <PropertyCondition Name="Target" />
+                      <PropertyCondition Name="InnerText">Usuń</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="AbsolutePath">/Orders/Delete/3</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Href">http://dszczutkowski-001-site1.ctempurl.com/Orders/Delete/3</PropertyCondition>
+                      <PropertyCondition Name="Class" />
+                      <PropertyCondition Name="ControlDefinition">href="/Orders/Delete/3"</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">16</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+                <UIObject ControlType="Hyperlink" Id="UIUsuńHyperlink1" FriendlyName="Usuń" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Index - Dawid Szczutkowski MVC</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Hyperlink</PropertyCondition>
+                      <PropertyCondition Name="TagName">A</PropertyCondition>
+                      <PropertyCondition Name="Id" />
+                      <PropertyCondition Name="Name" />
+                      <PropertyCondition Name="Target" />
+                      <PropertyCondition Name="InnerText">Usuń</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="AbsolutePath">/Orders/Delete/2</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Href">http://dszczutkowski-001-site1.ctempurl.com/Orders/Delete/2</PropertyCondition>
+                      <PropertyCondition Name="Class" />
+                      <PropertyCondition Name="ControlDefinition">href="/Orders/Delete/2"</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">13</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+                <UIObject ControlType="Hyperlink" Id="UIDawidSzczutkowskiMVCHyperlink" FriendlyName="Dawid Szczutkowski MVC" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Index - Dawid Szczutkowski MVC</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Hyperlink</PropertyCondition>
+                      <PropertyCondition Name="TagName">A</PropertyCondition>
+                      <PropertyCondition Name="Id" />
+                      <PropertyCondition Name="Name" />
+                      <PropertyCondition Name="Target" />
+                      <PropertyCondition Name="InnerText">Dawid Szczutkowski MVC</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="AbsolutePath">/</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Href">http://dszczutkowski-001-site1.ctempurl.com/</PropertyCondition>
+                      <PropertyCondition Name="Class">navbar-brand</PropertyCondition>
+                      <PropertyCondition Name="ControlDefinition">class="navbar-brand" href="/"</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">1</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+                <UIObject ControlType="Hyperlink" Id="UIEdytujHyperlink1" FriendlyName="Edytuj" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Index - Dawid Szczutkowski MVC</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Hyperlink</PropertyCondition>
+                      <PropertyCondition Name="TagName">A</PropertyCondition>
+                      <PropertyCondition Name="Id" />
+                      <PropertyCondition Name="Name" />
+                      <PropertyCondition Name="Target" />
+                      <PropertyCondition Name="InnerText">Edytuj</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="AbsolutePath">/Orders/Edit/6</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Href">http://dszczutkowski-001-site1.ctempurl.com/Orders/Edit/6</PropertyCondition>
+                      <PropertyCondition Name="Class" />
+                      <PropertyCondition Name="ControlDefinition">href="/Orders/Edit/6"</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">11</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+                <UIObject ControlType="Hyperlink" Id="UISzczegółyHyperlink1" FriendlyName="Szczegóły" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Index - Dawid Szczutkowski MVC</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Hyperlink</PropertyCondition>
+                      <PropertyCondition Name="TagName">A</PropertyCondition>
+                      <PropertyCondition Name="Id" />
+                      <PropertyCondition Name="Name" />
+                      <PropertyCondition Name="Target" />
+                      <PropertyCondition Name="InnerText">Szczegóły</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="AbsolutePath">/Zamowienia/6</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Href">http://dszczutkowski-001-site1.ctempurl.com/Zamowienia/6</PropertyCondition>
+                      <PropertyCondition Name="Class" />
+                      <PropertyCondition Name="ControlDefinition">href="/Zamowienia/6"</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">12</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+                <UIObject ControlType="Hyperlink" Id="UIUsuńHyperlink2" FriendlyName="Usuń" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Index - Dawid Szczutkowski MVC</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Hyperlink</PropertyCondition>
+                      <PropertyCondition Name="TagName">A</PropertyCondition>
+                      <PropertyCondition Name="Id" />
+                      <PropertyCondition Name="Name" />
+                      <PropertyCondition Name="Target" />
+                      <PropertyCondition Name="InnerText">Usuń</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="AbsolutePath">/Orders/Delete/6</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Href">http://dszczutkowski-001-site1.ctempurl.com/Orders/Delete/6</PropertyCondition>
+                      <PropertyCondition Name="Class" />
+                      <PropertyCondition Name="ControlDefinition">href="/Orders/Delete/6"</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">13</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+              </Descendants>
+            </UIObject>
+            <UIObject ControlType="Document" Id="UICreateDawidSzczutkowDocument" FriendlyName="Create - Dawid Szczutkowski MVC" SpecialControlType="None">
+              <TechnologyName>Web</TechnologyName>
+              <WindowTitles>
+                <WindowTitle>Create - Dawid Szczutkowski MVC</WindowTitle>
+              </WindowTitles>
+              <AndCondition Id="SearchCondition">
+                <AndCondition Id="Primary">
+                  <PropertyCondition Name="ControlType">Document</PropertyCondition>
+                  <PropertyCondition Name="TagName">BODY</PropertyCondition>
+                  <PropertyCondition Name="Id" />
+                  <PropertyCondition Name="RedirectingPage">False</PropertyCondition>
+                  <PropertyCondition Name="FrameDocument">False</PropertyCondition>
+                </AndCondition>
+                <FilterCondition Id="Secondary">
+                  <PropertyCondition Name="Title">Create - Dawid Szczutkowski MVC</PropertyCondition>
+                  <PropertyCondition Name="AbsolutePath">/Orders/Create</PropertyCondition>
+                  <PropertyCondition Name="PageUrl">http://dszczutkowski-001-site1.ctempurl.com/Orders/Create</PropertyCondition>
+                </FilterCondition>
+              </AndCondition>
+              <SupportLevel>0</SupportLevel>
+              <Descendants>
+                <UIObject ControlType="ComboBox" Id="UIWybierzdanieComboBox" FriendlyName="Wybierz danie" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Create - Dawid Szczutkowski MVC</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">ComboBox</PropertyCondition>
+                      <PropertyCondition Name="TagName">SELECT</PropertyCondition>
+                      <PropertyCondition Name="Id">MealID</PropertyCondition>
+                      <PropertyCondition Name="Name">MealID</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="LabeledBy">Wybierz danie</PropertyCondition>
+                      <PropertyCondition Name="Size">0</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="ItemCount">4</PropertyCondition>
+                      <PropertyCondition Name="Class">form-control</PropertyCondition>
+                      <PropertyCondition Name="ControlDefinition">name="MealID" class="form-control" id="M</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">1</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+                <UIObject ControlType="Edit" Id="UINumermiejscaEdit" FriendlyName="Numer miejsca" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Create - Dawid Szczutkowski MVC</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Edit</PropertyCondition>
+                      <PropertyCondition Name="TagName">INPUT</PropertyCondition>
+                      <PropertyCondition Name="Id">SeatNumber</PropertyCondition>
+                      <PropertyCondition Name="Name">SeatNumber</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="LabeledBy">Numer miejsca</PropertyCondition>
+                      <PropertyCondition Name="Type">SINGLELINE</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Class">form-control text-box single-line</PropertyCondition>
+                      <PropertyCondition Name="ControlDefinition">name="SeatNumber" class="form-control te</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">3</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+                <UIObject ControlType="Edit" Id="UIFormapłatnościEdit" FriendlyName="Forma płatności" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Create - Dawid Szczutkowski MVC</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Edit</PropertyCondition>
+                      <PropertyCondition Name="TagName">INPUT</PropertyCondition>
+                      <PropertyCondition Name="Id">PaymentMethod</PropertyCondition>
+                      <PropertyCondition Name="Name">PaymentMethod</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="LabeledBy">Forma płatności</PropertyCondition>
+                      <PropertyCondition Name="Type">SINGLELINE</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Class">form-control text-box single-line</PropertyCondition>
+                      <PropertyCondition Name="ControlDefinition">name="PaymentMethod" class="form-control</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">4</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+                <UIObject ControlType="Button" Id="UIUtwórzButton" FriendlyName="Utwórz" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Create - Dawid Szczutkowski MVC</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Button</PropertyCondition>
+                      <PropertyCondition Name="TagName">INPUT</PropertyCondition>
+                      <PropertyCondition Name="Id" />
+                      <PropertyCondition Name="Name" />
+                      <PropertyCondition Name="DisplayText">Utwórz</PropertyCondition>
+                      <PropertyCondition Name="Type">submit</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Class">btn btn-default</PropertyCondition>
+                      <PropertyCondition Name="ControlDefinition">class="btn btn-default" type="submit" va</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">5</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+                <UIObject ControlType="ComboBox" Id="UIWybierzdanieComboBox1" FriendlyName="Wybierz danie" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Create - Dawid Szczutkowski MVC</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">ComboBox</PropertyCondition>
+                      <PropertyCondition Name="TagName">SELECT</PropertyCondition>
+                      <PropertyCondition Name="Id">MealID</PropertyCondition>
+                      <PropertyCondition Name="Name">MealID</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="LabeledBy">Wybierz danie</PropertyCondition>
+                      <PropertyCondition Name="Size">0</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="ItemCount">3</PropertyCondition>
+                      <PropertyCondition Name="Class">form-control</PropertyCondition>
+                      <PropertyCondition Name="ControlDefinition">name="MealID" class="form-control" id="M</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">1</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+              </Descendants>
+            </UIObject>
+            <UIObject ControlType="Document" Id="UIDetailsDawidSzczutkoDocument1" FriendlyName="Details - Dawid Szczutkowski MVC" SpecialControlType="None">
+              <TechnologyName>Web</TechnologyName>
+              <WindowTitles>
+                <WindowTitle>Details - Dawid Szczutkowski MVC</WindowTitle>
+              </WindowTitles>
+              <AndCondition Id="SearchCondition">
+                <AndCondition Id="Primary">
+                  <PropertyCondition Name="ControlType">Document</PropertyCondition>
+                  <PropertyCondition Name="TagName">BODY</PropertyCondition>
+                  <PropertyCondition Name="Id" />
+                  <PropertyCondition Name="RedirectingPage">False</PropertyCondition>
+                  <PropertyCondition Name="FrameDocument">False</PropertyCondition>
+                </AndCondition>
+                <FilterCondition Id="Secondary">
+                  <PropertyCondition Name="Title">Details - Dawid Szczutkowski MVC</PropertyCondition>
+                  <PropertyCondition Name="AbsolutePath">/Zamowienia/2</PropertyCondition>
+                  <PropertyCondition Name="PageUrl">http://dszczutkowski-001-site1.ctempurl.com/Zamowienia/2</PropertyCondition>
+                </FilterCondition>
+              </AndCondition>
+              <SupportLevel>0</SupportLevel>
+              <Descendants>
+                <UIObject ControlType="Hyperlink" Id="UIBacktoListHyperlink" FriendlyName="Back to List" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Details - Dawid Szczutkowski MVC</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Hyperlink</PropertyCondition>
+                      <PropertyCondition Name="TagName">A</PropertyCondition>
+                      <PropertyCondition Name="Id" />
+                      <PropertyCondition Name="Name" />
+                      <PropertyCondition Name="Target" />
+                      <PropertyCondition Name="InnerText">Back to List</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="AbsolutePath">/Zamowienia</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Href">http://dszczutkowski-001-site1.ctempurl.com/Zamowienia</PropertyCondition>
+                      <PropertyCondition Name="Class" />
+                      <PropertyCondition Name="ControlDefinition">href="/Zamowienia"</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">8</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+              </Descendants>
+            </UIObject>
+            <UIObject ControlType="Document" Id="UIEditDawidSzczutkowskDocument1" FriendlyName="Edit - Dawid Szczutkowski MVC" SpecialControlType="None">
+              <TechnologyName>Web</TechnologyName>
+              <WindowTitles>
+                <WindowTitle>Edit - Dawid Szczutkowski MVC</WindowTitle>
+              </WindowTitles>
+              <AndCondition Id="SearchCondition">
+                <AndCondition Id="Primary">
+                  <PropertyCondition Name="ControlType">Document</PropertyCondition>
+                  <PropertyCondition Name="TagName">BODY</PropertyCondition>
+                  <PropertyCondition Name="Id" />
+                  <PropertyCondition Name="RedirectingPage">False</PropertyCondition>
+                  <PropertyCondition Name="FrameDocument">False</PropertyCondition>
+                </AndCondition>
+                <FilterCondition Id="Secondary">
+                  <PropertyCondition Name="Title">Edit - Dawid Szczutkowski MVC</PropertyCondition>
+                  <PropertyCondition Name="AbsolutePath">/Orders/Edit/1</PropertyCondition>
+                  <PropertyCondition Name="PageUrl">http://dszczutkowski-001-site1.ctempurl.com/Orders/Edit/1</PropertyCondition>
+                </FilterCondition>
+              </AndCondition>
+              <SupportLevel>0</SupportLevel>
+              <Descendants>
+                <UIObject ControlType="ComboBox" Id="UIMealIDComboBox" FriendlyName="MealID" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Edit - Dawid Szczutkowski MVC</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">ComboBox</PropertyCondition>
+                      <PropertyCondition Name="TagName">SELECT</PropertyCondition>
+                      <PropertyCondition Name="Id">MealID</PropertyCondition>
+                      <PropertyCondition Name="Name">MealID</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="LabeledBy">MealID</PropertyCondition>
+                      <PropertyCondition Name="Size">0</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="ItemCount">4</PropertyCondition>
+                      <PropertyCondition Name="Class">form-control</PropertyCondition>
+                      <PropertyCondition Name="ControlDefinition">name="MealID" class="form-control" id="M</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">1</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+                <UIObject ControlType="Button" Id="UISaveButton" FriendlyName="Save" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Edit - Dawid Szczutkowski MVC</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Button</PropertyCondition>
+                      <PropertyCondition Name="TagName">INPUT</PropertyCondition>
+                      <PropertyCondition Name="Id" />
+                      <PropertyCondition Name="Name" />
+                      <PropertyCondition Name="DisplayText">Save</PropertyCondition>
+                      <PropertyCondition Name="Type">submit</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Class">btn btn-default</PropertyCondition>
+                      <PropertyCondition Name="ControlDefinition">class="btn btn-default" type="submit" va</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">6</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+              </Descendants>
+            </UIObject>
+            <UIObject ControlType="Document" Id="UIDeleteDawidSzczutkowDocument4" FriendlyName="Delete - Dawid Szczutkowski MVC" SpecialControlType="None">
+              <TechnologyName>Web</TechnologyName>
+              <WindowTitles>
+                <WindowTitle>Delete - Dawid Szczutkowski MVC</WindowTitle>
+              </WindowTitles>
+              <AndCondition Id="SearchCondition">
+                <AndCondition Id="Primary">
+                  <PropertyCondition Name="ControlType">Document</PropertyCondition>
+                  <PropertyCondition Name="TagName">BODY</PropertyCondition>
+                  <PropertyCondition Name="Id" />
+                  <PropertyCondition Name="RedirectingPage">False</PropertyCondition>
+                  <PropertyCondition Name="FrameDocument">False</PropertyCondition>
+                </AndCondition>
+                <FilterCondition Id="Secondary">
+                  <PropertyCondition Name="Title">Delete - Dawid Szczutkowski MVC</PropertyCondition>
+                  <PropertyCondition Name="AbsolutePath">/Orders/Delete/3</PropertyCondition>
+                  <PropertyCondition Name="PageUrl">http://dszczutkowski-001-site1.ctempurl.com/Orders/Delete/3</PropertyCondition>
+                </FilterCondition>
+              </AndCondition>
+              <SupportLevel>0</SupportLevel>
+              <Descendants>
+                <UIObject ControlType="Button" Id="UIDeleteButton" FriendlyName="Delete" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Delete - Dawid Szczutkowski MVC</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Button</PropertyCondition>
+                      <PropertyCondition Name="TagName">INPUT</PropertyCondition>
+                      <PropertyCondition Name="Id" />
+                      <PropertyCondition Name="Name" />
+                      <PropertyCondition Name="DisplayText">Delete</PropertyCondition>
+                      <PropertyCondition Name="Type">submit</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Class">btn btn-default</PropertyCondition>
+                      <PropertyCondition Name="ControlDefinition">class="btn btn-default" type="submit" va</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">3</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+              </Descendants>
+            </UIObject>
+            <UIObject ControlType="Document" Id="UIDeleteDawidSzczutkowDocument11" FriendlyName="Delete - Dawid Szczutkowski MVC" SpecialControlType="None">
+              <TechnologyName>Web</TechnologyName>
+              <WindowTitles>
+                <WindowTitle>Delete - Dawid Szczutkowski MVC</WindowTitle>
+              </WindowTitles>
+              <AndCondition Id="SearchCondition">
+                <AndCondition Id="Primary">
+                  <PropertyCondition Name="ControlType">Document</PropertyCondition>
+                  <PropertyCondition Name="TagName">BODY</PropertyCondition>
+                  <PropertyCondition Name="Id" />
+                  <PropertyCondition Name="RedirectingPage">False</PropertyCondition>
+                  <PropertyCondition Name="FrameDocument">False</PropertyCondition>
+                </AndCondition>
+                <FilterCondition Id="Secondary">
+                  <PropertyCondition Name="Title">Delete - Dawid Szczutkowski MVC</PropertyCondition>
+                  <PropertyCondition Name="AbsolutePath">/Orders/Delete/2</PropertyCondition>
+                  <PropertyCondition Name="PageUrl">http://dszczutkowski-001-site1.ctempurl.com/Orders/Delete/2</PropertyCondition>
+                </FilterCondition>
+              </AndCondition>
+              <SupportLevel>0</SupportLevel>
+              <Descendants>
+                <UIObject ControlType="Button" Id="UIDeleteButton" FriendlyName="Delete" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Delete - Dawid Szczutkowski MVC</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Button</PropertyCondition>
+                      <PropertyCondition Name="TagName">INPUT</PropertyCondition>
+                      <PropertyCondition Name="Id" />
+                      <PropertyCondition Name="Name" />
+                      <PropertyCondition Name="DisplayText">Delete</PropertyCondition>
+                      <PropertyCondition Name="Type">submit</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Class">btn btn-default</PropertyCondition>
+                      <PropertyCondition Name="ControlDefinition">class="btn btn-default" type="submit" va</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">3</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+              </Descendants>
+            </UIObject>
+            <UIObject ControlType="Document" Id="UIEditDawidSzczutkowskDocument2" FriendlyName="Edit - Dawid Szczutkowski MVC" SpecialControlType="None">
+              <TechnologyName>Web</TechnologyName>
+              <WindowTitles>
+                <WindowTitle>Edit - Dawid Szczutkowski MVC</WindowTitle>
+              </WindowTitles>
+              <AndCondition Id="SearchCondition">
+                <AndCondition Id="Primary">
+                  <PropertyCondition Name="ControlType">Document</PropertyCondition>
+                  <PropertyCondition Name="TagName">BODY</PropertyCondition>
+                  <PropertyCondition Name="Id" />
+                  <PropertyCondition Name="RedirectingPage">False</PropertyCondition>
+                  <PropertyCondition Name="FrameDocument">False</PropertyCondition>
+                </AndCondition>
+                <FilterCondition Id="Secondary">
+                  <PropertyCondition Name="Title">Edit - Dawid Szczutkowski MVC</PropertyCondition>
+                  <PropertyCondition Name="AbsolutePath">/Orders/Edit/6</PropertyCondition>
+                  <PropertyCondition Name="PageUrl">http://dszczutkowski-001-site1.ctempurl.com/Orders/Edit/6</PropertyCondition>
+                </FilterCondition>
+              </AndCondition>
+              <SupportLevel>0</SupportLevel>
+              <Descendants>
+                <UIObject ControlType="ComboBox" Id="UIMealIDComboBox" FriendlyName="MealID" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Edit - Dawid Szczutkowski MVC</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">ComboBox</PropertyCondition>
+                      <PropertyCondition Name="TagName">SELECT</PropertyCondition>
+                      <PropertyCondition Name="Id">MealID</PropertyCondition>
+                      <PropertyCondition Name="Name">MealID</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="LabeledBy">MealID</PropertyCondition>
+                      <PropertyCondition Name="Size">0</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="ItemCount">3</PropertyCondition>
+                      <PropertyCondition Name="Class">form-control</PropertyCondition>
+                      <PropertyCondition Name="ControlDefinition">name="MealID" class="form-control" id="M</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">1</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+                <UIObject ControlType="Button" Id="UISaveButton" FriendlyName="Save" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Edit - Dawid Szczutkowski MVC</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Button</PropertyCondition>
+                      <PropertyCondition Name="TagName">INPUT</PropertyCondition>
+                      <PropertyCondition Name="Id" />
+                      <PropertyCondition Name="Name" />
+                      <PropertyCondition Name="DisplayText">Save</PropertyCondition>
+                      <PropertyCondition Name="Type">submit</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Class">btn btn-default</PropertyCondition>
+                      <PropertyCondition Name="ControlDefinition">class="btn btn-default" type="submit" va</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">6</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+              </Descendants>
+            </UIObject>
+            <UIObject ControlType="Document" Id="UIDetailsDawidSzczutkoDocument2" FriendlyName="Details - Dawid Szczutkowski MVC" SpecialControlType="None">
+              <TechnologyName>Web</TechnologyName>
+              <WindowTitles>
+                <WindowTitle>Details - Dawid Szczutkowski MVC</WindowTitle>
+              </WindowTitles>
+              <AndCondition Id="SearchCondition">
+                <AndCondition Id="Primary">
+                  <PropertyCondition Name="ControlType">Document</PropertyCondition>
+                  <PropertyCondition Name="TagName">BODY</PropertyCondition>
+                  <PropertyCondition Name="Id" />
+                  <PropertyCondition Name="RedirectingPage">False</PropertyCondition>
+                  <PropertyCondition Name="FrameDocument">False</PropertyCondition>
+                </AndCondition>
+                <FilterCondition Id="Secondary">
+                  <PropertyCondition Name="Title">Details - Dawid Szczutkowski MVC</PropertyCondition>
+                  <PropertyCondition Name="AbsolutePath">/Zamowienia/6</PropertyCondition>
+                  <PropertyCondition Name="PageUrl">http://dszczutkowski-001-site1.ctempurl.com/Zamowienia/6</PropertyCondition>
+                </FilterCondition>
+              </AndCondition>
+              <SupportLevel>0</SupportLevel>
+              <Descendants>
+                <UIObject ControlType="Hyperlink" Id="UIBacktoListHyperlink" FriendlyName="Back to List" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Details - Dawid Szczutkowski MVC</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Hyperlink</PropertyCondition>
+                      <PropertyCondition Name="TagName">A</PropertyCondition>
+                      <PropertyCondition Name="Id" />
+                      <PropertyCondition Name="Name" />
+                      <PropertyCondition Name="Target" />
+                      <PropertyCondition Name="InnerText">Back to List</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="AbsolutePath">/Zamowienia</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Href">http://dszczutkowski-001-site1.ctempurl.com/Zamowienia</PropertyCondition>
+                      <PropertyCondition Name="Class" />
+                      <PropertyCondition Name="ControlDefinition">href="/Zamowienia"</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">8</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+              </Descendants>
+            </UIObject>
+            <UIObject ControlType="Document" Id="UIDeleteDawidSzczutkowDocument5" FriendlyName="Delete - Dawid Szczutkowski MVC" SpecialControlType="None">
+              <TechnologyName>Web</TechnologyName>
+              <WindowTitles>
+                <WindowTitle>Delete - Dawid Szczutkowski MVC</WindowTitle>
+              </WindowTitles>
+              <AndCondition Id="SearchCondition">
+                <AndCondition Id="Primary">
+                  <PropertyCondition Name="ControlType">Document</PropertyCondition>
+                  <PropertyCondition Name="TagName">BODY</PropertyCondition>
+                  <PropertyCondition Name="Id" />
+                  <PropertyCondition Name="RedirectingPage">False</PropertyCondition>
+                  <PropertyCondition Name="FrameDocument">False</PropertyCondition>
+                </AndCondition>
+                <FilterCondition Id="Secondary">
+                  <PropertyCondition Name="Title">Delete - Dawid Szczutkowski MVC</PropertyCondition>
+                  <PropertyCondition Name="AbsolutePath">/Orders/Delete/6</PropertyCondition>
+                  <PropertyCondition Name="PageUrl">http://dszczutkowski-001-site1.ctempurl.com/Orders/Delete/6</PropertyCondition>
+                </FilterCondition>
+              </AndCondition>
+              <SupportLevel>0</SupportLevel>
+              <Descendants>
+                <UIObject ControlType="Button" Id="UIDeleteButton" FriendlyName="Delete" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Delete - Dawid Szczutkowski MVC</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Button</PropertyCondition>
+                      <PropertyCondition Name="TagName">INPUT</PropertyCondition>
+                      <PropertyCondition Name="Id" />
+                      <PropertyCondition Name="Name" />
+                      <PropertyCondition Name="DisplayText">Delete</PropertyCondition>
+                      <PropertyCondition Name="Type">submit</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Class">btn btn-default</PropertyCondition>
+                      <PropertyCondition Name="ControlDefinition">class="btn btn-default" type="submit" va</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">3</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+              </Descendants>
+            </UIObject>
+          </Descendants>
+        </TopLevelWindow>
+        <TopLevelWindow ControlType="Window" Id="UIKontaktDawidSzczutkoWindow" FriendlyName="Kontakt - Dawid Szczutkowski MVC - Internet Explor..." SpecialControlType="BrowserWindow" SessionId="4196036">
+          <TechnologyName>MSAA</TechnologyName>
+          <WindowTitles>
+            <WindowTitle>Kontakt - Dawid Szczutkowski MVC</WindowTitle>
+            <WindowTitle>Strona Główna - Dawid Szczutkowski MVC</WindowTitle>
+            <WindowTitle>dszczutkowski · GitHub</WindowTitle>
+          </WindowTitles>
+          <SearchConfigurations>
+            <SearchConfiguration>VisibleOnly</SearchConfiguration>
+          </SearchConfigurations>
+          <AndCondition Id="SearchCondition">
+            <PropertyCondition Name="Name">Kontakt - Dawid Szczutkowski MVC</PropertyCondition>
+            <PropertyCondition Name="ClassName">IEFrame</PropertyCondition>
+            <PropertyCondition Name="ControlType">Window</PropertyCondition>
+          </AndCondition>
+          <SupportLevel>1</SupportLevel>
+          <Descendants>
+            <UIObject ControlType="Document" Id="UIKontaktDawidSzczutkoDocument" FriendlyName="Kontakt - Dawid Szczutkowski MVC" SpecialControlType="None">
+              <TechnologyName>Web</TechnologyName>
+              <WindowTitles>
+                <WindowTitle>Kontakt - Dawid Szczutkowski MVC</WindowTitle>
+              </WindowTitles>
+              <AndCondition Id="SearchCondition">
+                <AndCondition Id="Primary">
+                  <PropertyCondition Name="ControlType">Document</PropertyCondition>
+                  <PropertyCondition Name="TagName">BODY</PropertyCondition>
+                  <PropertyCondition Name="Id" />
+                  <PropertyCondition Name="RedirectingPage">False</PropertyCondition>
+                  <PropertyCondition Name="FrameDocument">False</PropertyCondition>
+                </AndCondition>
+                <FilterCondition Id="Secondary">
+                  <PropertyCondition Name="Title">Kontakt - Dawid Szczutkowski MVC</PropertyCondition>
+                  <PropertyCondition Name="AbsolutePath">/Home/Contact</PropertyCondition>
+                  <PropertyCondition Name="PageUrl">http://dszczutkowski-001-site1.ctempurl.com/Home/Contact</PropertyCondition>
+                </FilterCondition>
+              </AndCondition>
+              <SupportLevel>0</SupportLevel>
+              <Descendants>
+                <UIObject ControlType="Hyperlink" Id="UIGithubcomdsczutkowskHyperlink" FriendlyName="github.com/dsczutkowski" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Kontakt - Dawid Szczutkowski MVC</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Hyperlink</PropertyCondition>
+                      <PropertyCondition Name="TagName">A</PropertyCondition>
+                      <PropertyCondition Name="Id" />
+                      <PropertyCondition Name="Name" />
+                      <PropertyCondition Name="Target" />
+                      <PropertyCondition Name="InnerText">github.com/dsczutkowski</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="AbsolutePath">/dszczutkowski</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Href">https://github.com/dszczutkowski</PropertyCondition>
+                      <PropertyCondition Name="Class" />
+                      <PropertyCondition Name="ControlDefinition">href="https://github.com/dszczutkowski"</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">7</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+                <UIObject ControlType="Hyperlink" Id="UIDszczutkowskioutlookHyperlink" FriendlyName="dszczutkowski@outlook.com" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Kontakt - Dawid Szczutkowski MVC</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Hyperlink</PropertyCondition>
+                      <PropertyCondition Name="TagName">A</PropertyCondition>
+                      <PropertyCondition Name="Id" />
+                      <PropertyCondition Name="Name" />
+                      <PropertyCondition Name="Target" />
+                      <PropertyCondition Name="InnerText">dszczutkowski@outlook.com</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="AbsolutePath" />
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Href">mailto:dszczutkowski@outlook.com</PropertyCondition>
+                      <PropertyCondition Name="Class" />
+                      <PropertyCondition Name="ControlDefinition">href="mailto:dszczutkowski@outlook.com"</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">8</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+                <UIObject ControlType="Hyperlink" Id="UIDawidSzczutkowskiMVCHyperlink" FriendlyName="Dawid Szczutkowski MVC" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Kontakt - Dawid Szczutkowski MVC</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Hyperlink</PropertyCondition>
+                      <PropertyCondition Name="TagName">A</PropertyCondition>
+                      <PropertyCondition Name="Id" />
+                      <PropertyCondition Name="Name" />
+                      <PropertyCondition Name="Target" />
+                      <PropertyCondition Name="InnerText">Dawid Szczutkowski MVC</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="AbsolutePath">/</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Href">http://dszczutkowski-001-site1.ctempurl.com/</PropertyCondition>
+                      <PropertyCondition Name="Class">navbar-brand</PropertyCondition>
+                      <PropertyCondition Name="ControlDefinition">class="navbar-brand" href="/"</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">1</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+              </Descendants>
+            </UIObject>
+          </Descendants>
+        </TopLevelWindow>
+        <TopLevelWindow ControlType="Window" Id="UIStronaGłównaDawidSzcWindow2" FriendlyName="Strona Główna - Dawid Szczutkowski MVC - Internet ..." SpecialControlType="BrowserWindow" SessionId="4196036">
+          <TechnologyName>MSAA</TechnologyName>
+          <WindowTitles>
+            <WindowTitle>Strona Główna - Dawid Szczutkowski MVC</WindowTitle>
+            <WindowTitle>Kontakt - Dawid Szczutkowski MVC</WindowTitle>
+            <WindowTitle>dszczutkowski · GitHub</WindowTitle>
+          </WindowTitles>
+          <SearchConfigurations>
+            <SearchConfiguration>VisibleOnly</SearchConfiguration>
+          </SearchConfigurations>
+          <AndCondition Id="SearchCondition">
+            <PropertyCondition Name="Name">Strona Główna - Dawid Szczutkowski MVC</PropertyCondition>
+            <PropertyCondition Name="ClassName">IEFrame</PropertyCondition>
+            <PropertyCondition Name="ControlType">Window</PropertyCondition>
+          </AndCondition>
+          <SupportLevel>0</SupportLevel>
+          <Descendants />
+        </TopLevelWindow>
+        <TopLevelWindow ControlType="Window" Id="UIItemWindow1" FriendlyName="" SpecialControlType="None" SessionId="2557944">
+          <TechnologyName>MSAA</TechnologyName>
+          <WindowTitles />
+          <SearchConfigurations>
+            <SearchConfiguration>VisibleOnly</SearchConfiguration>
+          </SearchConfigurations>
+          <AndCondition Id="SearchCondition">
+            <PropertyCondition Name="AccessibleName">Okno menu wysuwanego</PropertyCondition>
+            <PropertyCondition Name="ClassName">DirectUIHWND</PropertyCondition>
+            <PropertyCondition Name="ControlType">Window</PropertyCondition>
+          </AndCondition>
+          <SupportLevel>0</SupportLevel>
+          <Descendants>
+            <UIObject ControlType="Client" Id="UIOknomenuwysuwanegoClient" FriendlyName="Okno menu wysuwanego" SpecialControlType="None">
+              <TechnologyName>MSAA</TechnologyName>
+              <WindowTitles />
+              <SearchConfigurations>
+                <SearchConfiguration>VisibleOnly</SearchConfiguration>
+              </SearchConfigurations>
+              <AndCondition Id="SearchCondition">
+                <PropertyCondition Name="Name">Okno menu wysuwanego</PropertyCondition>
+                <PropertyCondition Name="ControlType">Client</PropertyCondition>
+              </AndCondition>
+              <SupportLevel>0</SupportLevel>
+              <Descendants />
+            </UIObject>
+          </Descendants>
+        </TopLevelWindow>
+        <TopLevelWindow ControlType="Window" Id="UIStronaGłównaDawidSzcWindow3" FriendlyName="Strona Główna - Dawid Szczutkowski MVC - Internet ..." SpecialControlType="BrowserWindow" SessionId="4196036">
+          <TechnologyName>MSAA</TechnologyName>
+          <WindowTitles>
+            <WindowTitle>Strona Główna - Dawid Szczutkowski MVC</WindowTitle>
+            <WindowTitle>Kontakt - Dawid Szczutkowski MVC</WindowTitle>
+            <WindowTitle>dszczutkowski · GitHub</WindowTitle>
+          </WindowTitles>
+          <SearchConfigurations>
+            <SearchConfiguration>VisibleOnly</SearchConfiguration>
+          </SearchConfigurations>
+          <AndCondition Id="SearchCondition">
+            <PropertyCondition Name="Name">Strona Główna - Dawid Szczutkowski MVC</PropertyCondition>
+            <PropertyCondition Name="ClassName">IEFrame</PropertyCondition>
+            <PropertyCondition Name="ControlType">Window</PropertyCondition>
+          </AndCondition>
+          <SupportLevel>0</SupportLevel>
+          <Descendants>
+            <UIObject ControlType="Document" Id="UIDszczutkowskiGitHubDocument" FriendlyName="dszczutkowski · GitHub" SpecialControlType="None">
+              <TechnologyName>Web</TechnologyName>
+              <WindowTitles>
+                <WindowTitle>dszczutkowski · GitHub</WindowTitle>
+              </WindowTitles>
+              <AndCondition Id="SearchCondition">
+                <AndCondition Id="Primary">
+                  <PropertyCondition Name="ControlType">Document</PropertyCondition>
+                  <PropertyCondition Name="TagName">BODY</PropertyCondition>
+                  <PropertyCondition Name="Id" />
+                  <PropertyCondition Name="RedirectingPage">False</PropertyCondition>
+                  <PropertyCondition Name="FrameDocument">False</PropertyCondition>
+                </AndCondition>
+                <FilterCondition Id="Secondary">
+                  <PropertyCondition Name="Title">dszczutkowski · GitHub</PropertyCondition>
+                  <PropertyCondition Name="AbsolutePath">/dszczutkowski</PropertyCondition>
+                  <PropertyCondition Name="PageUrl">https://github.com/dszczutkowski</PropertyCondition>
+                </FilterCondition>
+              </AndCondition>
+              <SupportLevel>0</SupportLevel>
+              <Descendants />
+            </UIObject>
+          </Descendants>
+        </TopLevelWindow>
+        <TopLevelWindow ControlType="Window" Id="UIStronaGłównaDawidSzcWindow4" FriendlyName="Strona Główna - Dawid Szczutkowski MVC - Internet ..." SpecialControlType="BrowserWindow" SessionId="4261572">
+          <TechnologyName>MSAA</TechnologyName>
+          <WindowTitles>
+            <WindowTitle>Strona Główna - Dawid Szczutkowski MVC</WindowTitle>
+            <WindowTitle>Nazwy - Dawid Szczutkowski MVC</WindowTitle>
+            <WindowTitle>Posiłki - Dawid Szczutkowski MVC</WindowTitle>
+            <WindowTitle>Index - Dawid Szczutkowski MVC</WindowTitle>
+          </WindowTitles>
+          <SearchConfigurations>
+            <SearchConfiguration>VisibleOnly</SearchConfiguration>
+          </SearchConfigurations>
+          <AndCondition Id="SearchCondition">
+            <PropertyCondition Name="Name">Strona Główna - Dawid Szczutkowski MVC</PropertyCondition>
+            <PropertyCondition Name="ClassName">IEFrame</PropertyCondition>
+            <PropertyCondition Name="ControlType">Window</PropertyCondition>
+          </AndCondition>
+          <SupportLevel>0</SupportLevel>
+          <Descendants>
+            <UIObject ControlType="Document" Id="UINazwyDawidSzczutkowsDocument" FriendlyName="Nazwy - Dawid Szczutkowski MVC" SpecialControlType="None">
+              <TechnologyName>Web</TechnologyName>
+              <WindowTitles>
+                <WindowTitle>Nazwy - Dawid Szczutkowski MVC</WindowTitle>
+              </WindowTitles>
+              <AndCondition Id="SearchCondition">
+                <AndCondition Id="Primary">
+                  <PropertyCondition Name="ControlType">Document</PropertyCondition>
+                  <PropertyCondition Name="TagName">BODY</PropertyCondition>
+                  <PropertyCondition Name="Id" />
+                  <PropertyCondition Name="RedirectingPage">False</PropertyCondition>
+                  <PropertyCondition Name="FrameDocument">False</PropertyCondition>
+                </AndCondition>
+                <FilterCondition Id="Secondary">
+                  <PropertyCondition Name="Title">Nazwy - Dawid Szczutkowski MVC</PropertyCondition>
+                  <PropertyCondition Name="AbsolutePath">/Posilki/Nazwy</PropertyCondition>
+                  <PropertyCondition Name="PageUrl">http://dszczutkowski-001-site1.ctempurl.com/Posilki/Nazwy</PropertyCondition>
+                </FilterCondition>
+              </AndCondition>
+              <SupportLevel>0</SupportLevel>
+              <Descendants>
+                <UIObject ControlType="Hyperlink" Id="UIWięcejHyperlink" FriendlyName="Więcej" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Nazwy - Dawid Szczutkowski MVC</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Hyperlink</PropertyCondition>
+                      <PropertyCondition Name="TagName">A</PropertyCondition>
+                      <PropertyCondition Name="Id" />
+                      <PropertyCondition Name="Name" />
+                      <PropertyCondition Name="Target" />
+                      <PropertyCondition Name="InnerText">Więcej</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="AbsolutePath">/Posilki</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Href">http://dszczutkowski-001-site1.ctempurl.com/Posilki</PropertyCondition>
+                      <PropertyCondition Name="Class" />
+                      <PropertyCondition Name="ControlDefinition">href="/Posilki"</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">7</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+                <UIObject ControlType="Hyperlink" Id="UIWięcejHyperlink1" FriendlyName="Więcej" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Nazwy - Dawid Szczutkowski MVC</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Hyperlink</PropertyCondition>
+                      <PropertyCondition Name="TagName">A</PropertyCondition>
+                      <PropertyCondition Name="Id" />
+                      <PropertyCondition Name="Name" />
+                      <PropertyCondition Name="Target" />
+                      <PropertyCondition Name="InnerText">Więcej</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="AbsolutePath">/Posilki</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Href">http://dszczutkowski-001-site1.ctempurl.com/Posilki</PropertyCondition>
+                      <PropertyCondition Name="Class" />
+                      <PropertyCondition Name="ControlDefinition">href="/Posilki"</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">8</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+              </Descendants>
+            </UIObject>
+          </Descendants>
+        </TopLevelWindow>
+        <TopLevelWindow ControlType="Window" Id="UIStronaGłównaDawidSzcWindow5" FriendlyName="Strona Główna - Dawid Szczutkowski MVC - Internet ..." SpecialControlType="BrowserWindow" SessionId="4261572">
+          <TechnologyName>MSAA</TechnologyName>
+          <WindowTitles>
+            <WindowTitle>Strona Główna - Dawid Szczutkowski MVC</WindowTitle>
+            <WindowTitle>Nazwy - Dawid Szczutkowski MVC</WindowTitle>
+            <WindowTitle>Posiłki - Dawid Szczutkowski MVC</WindowTitle>
+            <WindowTitle>Index - Dawid Szczutkowski MVC</WindowTitle>
+          </WindowTitles>
+          <SearchConfigurations>
+            <SearchConfiguration>VisibleOnly</SearchConfiguration>
+          </SearchConfigurations>
+          <AndCondition Id="SearchCondition">
+            <PropertyCondition Name="Name">Strona Główna - Dawid Szczutkowski MVC</PropertyCondition>
+            <PropertyCondition Name="ClassName">IEFrame</PropertyCondition>
+            <PropertyCondition Name="ControlType">Window</PropertyCondition>
+          </AndCondition>
+          <SupportLevel>0</SupportLevel>
+          <Descendants>
+            <UIObject ControlType="Document" Id="UIPosiłkiDawidSzczutkoDocument" FriendlyName="Posiłki - Dawid Szczutkowski MVC" SpecialControlType="None">
+              <TechnologyName>Web</TechnologyName>
+              <WindowTitles>
+                <WindowTitle>Posiłki - Dawid Szczutkowski MVC</WindowTitle>
+              </WindowTitles>
+              <AndCondition Id="SearchCondition">
+                <AndCondition Id="Primary">
+                  <PropertyCondition Name="ControlType">Document</PropertyCondition>
+                  <PropertyCondition Name="TagName">BODY</PropertyCondition>
+                  <PropertyCondition Name="Id" />
+                  <PropertyCondition Name="RedirectingPage">False</PropertyCondition>
+                  <PropertyCondition Name="FrameDocument">False</PropertyCondition>
+                </AndCondition>
+                <FilterCondition Id="Secondary">
+                  <PropertyCondition Name="Title">Posiłki - Dawid Szczutkowski MVC</PropertyCondition>
+                  <PropertyCondition Name="AbsolutePath">/Posilki</PropertyCondition>
+                  <PropertyCondition Name="PageUrl">http://dszczutkowski-001-site1.ctempurl.com/Posilki</PropertyCondition>
+                </FilterCondition>
+              </AndCondition>
+              <SupportLevel>0</SupportLevel>
+              <Descendants>
+                <UIObject ControlType="Hyperlink" Id="UIDawidSzczutkowskiMVCHyperlink" FriendlyName="Dawid Szczutkowski MVC" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Posiłki - Dawid Szczutkowski MVC</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Hyperlink</PropertyCondition>
+                      <PropertyCondition Name="TagName">A</PropertyCondition>
+                      <PropertyCondition Name="Id" />
+                      <PropertyCondition Name="Name" />
+                      <PropertyCondition Name="Target" />
+                      <PropertyCondition Name="InnerText">Dawid Szczutkowski MVC</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="AbsolutePath">/</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Href">http://dszczutkowski-001-site1.ctempurl.com/</PropertyCondition>
+                      <PropertyCondition Name="Class">navbar-brand</PropertyCondition>
+                      <PropertyCondition Name="ControlDefinition">class="navbar-brand" href="/"</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">1</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+              </Descendants>
+            </UIObject>
+          </Descendants>
+        </TopLevelWindow>
+      </TopLevelWindows>
+    </UIMap>
+  </Maps>
+  <ValueMap>
+    <ParameterList />
+  </ValueMap>
+</UITest>
